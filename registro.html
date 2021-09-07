@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Gloria - Perder es más">
+    <meta property="og:site_name" content="Gloria - Perder es más">
+    <meta property="og:url" content="perderesmas.pe">
+    <meta property="og:description" content="¡Bienvenido a tu nuevo reto!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="http://perderesmas.pe/ppl.jpg">
+
+    <title>Gloria - Perder es más</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/registro.css">
+
+
+    <style>
+        .logo {
+            position: absolute;
+            top: 15px;
+            left: 2%;
+        }
+
+        .error {
+            color: indianred;
+            margin-bottom: 0;
+        }
+
+        label#declaro-error {
+            position: absolute;
+            width: 350px;
+            margin-top: 130px;
+        }
+
+        .enviar-margen {
+            margin-top: 70px !important;
+        }
+
+        @media (max-width: 767px) {
+            .logo {
+                position: relative !important;
+                margin: 5px auto;
+            }
+
+            label#declaro-error {
+                position: absolute;
+                width: 300px;
+                margin-top: 130px;
+            }
+        }
+
+        #empresa-error {
+            position: absolute;
+            margin-top: 58px;
+        }
+
+        @media (max-width: 600px) {
+            #empresa-error {
+                margin-left: -25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center logosMobile">
+                <img class="logo" src="img/logoCompleto.png" alt="logo"
+                    style="position: absolute; top: 15px; left: 2%;">
+                <img class="logoGloria" src="img/logoGloria.png" alt="logo"
+                    style="position: absolute; top: 15px; right: 2%;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row d-flex align-items-end py-5">
+            <div class="col-3 d-none d-md-block"><img class="img-fluid" src="img/ilustracion_2.png" alt="imagen"></div>
+            <div class="col-12 col-md-6">
+                <div class="boxForm">
+                    <h2 class="white textCenter">REGISTRO</h2>
+                    <p class="white textCenter">Datos Personales</p>
+                    <form action="enviar.php" method="POST" id="participar" class="formRegistro">
+
+                        <label for="dni"> DNI o Carnet de extranjería <br>
+                            <input id="dni" type="number" name="dni" maxlength="20">
+                        </label>
+                        <div class="boxApellidos">
+                            <label for="apellidoPaterno">
+                                Apellido Paterno
+                                <input id="apellidoPaterno" type="text" name="appaterno" maxlength="50">
+                            </label>
+                            <label for="apellidoMaterno">
+                                Apellido Materno
+                                <input id="apellidoMaterno" type="text" name="apmaterno" maxlength="50">
+                            </label>
+                        </div>
+                        <label for="nombres">
+                            Nombres
+                            <input id="nombres" type="text" name="nombres" maxlength="100">
+                        </label>
+                        <label for="edad">
+                            Edad
+                            <input id="edad" type="number" name="edad" maxlength="11">
+                        </label>
+                        <label for="telefono">
+                            Teléfono
+                            <input id="telefono" type="tel" name="telefono" maxlength="20">
+                        </label>
+                        <label for="email" class="email">
+                            Correo Electrónico
+                            <input id="email" type="email" name="email" maxlength="255">
+                        </label>
+                        <label for="areaDeTrabajo">
+                            Área de trabajo
+                            <input id="areaDeTrabajo" type="text" name="area" maxlength="30">
+                        </label>
+                        <label for="cargo">
+                            Cargo
+                            <input id="cargo" type="text" name="cargo" maxlength="30">
+                        </label>
+                        <label for="empresa">Empresa de trabajo
+                            <div class="empresas">
+                                <div class="empresa">
+                                    <input type="radio" id="gloria" name="empresa" value="gloria">
+                                    <label for="gloria">Gloria</label>
+                                </div>
+                                <div class="empresa">
+                                    <input type="radio" id="deprodeca" name="empresa" value="deprodeca">
+                                    <label for="deprodeca">Deprodeca</label>
+                                </div>
+                                <div class="empresa">
+                                    <input type="radio" id="planificadora" name="empresa" value="planificadora">
+                                    <label for="planificadora">Planificadora Gloria</label>
+                                </div>
+                                <div class="empresa">
+                                    
+                                </div>
+                            </div>
+
+                        </label>
+
+                        <label for="pass">
+                            Contraseña
+                            <input id="pass" type="password" name="pass" maxlength="300">
+                        </label>
+                        <div>
+                            <label for="tyc">
+                                <input id="tyc" type="checkbox" name="tyc" value="Acepto">
+                                <span class="declarobg">Acepto los <a style="text-decoration: underline;
+                                    color: #fff;" href="terminos-y-condiciones.html" target="_blank"
+                                        rel="noopener noreferrer"> terminos y condiciones </a></span>
+                            </label>
+                        </div>
+                        <input class="btn enviar" type="submit" value="Únete">
+                    </form>
+                </div>
+            </div>
+            <div class="col-12 col-md-3 mt-3 mt-md-0"><img class="img-fluid" src="img/ilustracion_1.png" alt="imagen">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <!-- Load Validation JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dni, #edad').on('input', function () {
+                this.value = this.value.replace(/[^0-9]/g, '');
+            });
+            $("#participar").validate({
+                rules: {
+                    dni: {
+                        required: true,
+                        number: true
+                    },
+                    appaterno: {
+                        required: true,
+                    },
+                    apmaterno: {
+                        required: true,
+                    },
+                    nombres: {
+                        required: true,
+                    },
+                    edad: {
+                        required: true,
+                        number: true
+                    },
+                    telefono: {
+                        required: true,
+                        telefono: true
+                    },
+                    areaDetrabajo: {
+                        required: true,
+                    },
+                    cargo: {
+                        required: true,
+                    },
+                    empresa: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    pass: {
+                        required: true
+                    },
+                    tyc: {
+                        required: true
+                    }
+                },
+                messages: {
+                    dni: {
+                        required: "Por favor ingresa tu documento"
+                    },
+                    appaterno: {
+                        required: "Por favor ingresa tu apellido parterno"
+                    },
+                    apmaterno: {
+                        required: "Por favor ingresa tu apellido materno"
+                    },
+                    nombres: {
+                        required: "Por favor ingresa tu nombre"
+                    },
+                    edad: {
+                        required: "Por favor ingresa tu edad"
+                    },
+                    telefono: {
+                        required: "Por favor ingresa un numero de contacto"
+                    },
+                    areaDetrabajo: {
+                        required: "Por favor indica tu área de trabajo"
+                    },
+                    cargo: {
+                        required: "Por favor indica tu cargo"
+                    },
+                    empresa: {
+                        required: "Por favor selecciona tu empresa de trabajo"
+                    },
+                    email: {
+                        required: "Por favor ingresa tu email",
+                        email: "Por favor ingresa un email valido"
+                    },
+                    pass: {
+                        required: "Por favor ingresa un password para tu usuario"
+                    },
+                    tyc: {
+                        required: "Debes aceptar el uso de datos personales para continuar"
+                    }
+                },
+                /*submitHandler: function () {
+
+                    $(".email").addClass(email-margen);
+                    //$(".progress-bar").show();
+                    //$(".load").show();
+                    //$('.load').html('<center><img src="img/loading.gif" alt="" height="20" class"loadgif"></center><br><center><p class="naranja bold">Estamos subiendo el video</p></center>');
+                    //$(".btn-par").prop('disabled', true);
+                },*/
+                invalidHandler: function () {
+
+                    $(".email").addClass("email-margen");
+                    $(".enviar").addClass("enviar-margen");
+                    //$(".load").hide();
+                    //$(".loadgif").hide();
+                    //$(".btn-par").prop('disabled', false);
+                }
+            });
+            /*
+            setTimeout(function () {
+                $('.alerta').fadeOut('slow');
+            }, 5000);
+
+            setTimeout(function () {
+                $('#registro').fadeIn('slow');
+            }, 5600);
+            */
+        });
+    </script>
+</body>
+
+</html>
