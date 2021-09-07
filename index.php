@@ -68,7 +68,7 @@ if (isset($_SESSION['logged_in'])) {
                         amet, faucibus vel orci. Nam aliquam eros ac urna suscipit efficitur ac id dui. Nulla dictum, tortor
                         ac dapibus luctus, tellus arcu tristique ex,
                     </p> -->
-                    <!--Comentario sonso-->
+                    <!--Comentario de prueba-->
                     <img class="logoLoginForm" src="img/logoperderEsMasWhite.png" alt="logo">
                     <form class="formLogin" action="index.php" method="post">
                         <label class="w-100" for="email">
