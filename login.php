@@ -21,7 +21,8 @@ if (isset($_SESSION['logged_in'])) {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['username'] = $datos['nombres'];
                 $_SESSION['doc'] = $datos['dni'];
-                header('Location: home.php');
+                $var = $_SESSION['doc'];
+                header('Location: home.php/'.$var);
                 exit();
             } else {
                 $error = "Valores incorrectos";
