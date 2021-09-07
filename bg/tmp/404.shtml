@@ -1,0 +1,120 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="es-pe">
+<meta name="keywords" content="tentu.com hosting estados unidos united states lima peru español">
+<meta name="description" content="Sitio Web alojado en www.tentu.com">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>ERROR 404: La página que estás buscando no existe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1">
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+
+<style type="text/css">
+html, body {
+	font-size: 12px;
+	height: 100%;
+	margin: 0;
+}
+
+body {
+font: 100% 'Fredoka One', cursive;
+background-color: #03031a;
+background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=);
+	color:#eeeeee;
+	text-align:center;
+}
+
+#content {
+	font-size:1.5rem;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #eeeeee;
+  padding:2rem;
+  width:700px;
+}
+.boton {
+	text-decoration:none;
+	 border: 2px solid #9FCC3B;
+   border-radius: 5px;
+   padding:10px;
+   background:#9FCC3B;
+   color:#111111;
+	}
+
+a {
+	text-decoration:none;	 
+   padding:10px; 
+   color:#9FCC3B;
+	}
+
+a:active, a:focus {
+outline: none;
+color:
+}
+.error {
+	color: #9FCC3B;
+	font-size: 2rem;
+}
+
+
+@media screen and (max-width: 767px) {
+#content {
+	font-size:1.2rem;
+  width:85%;
+}
+
+}
+
+
+</style>
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-5623129497209268",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+<div id="content">
+<p>
+<span class="error">ERROR 404</span><br />[No se encontró la página solicitada]<br><br>
+Intenta encontrar la información que buscas desde la página principal</span>
+<br /><br /><br />
+<a class="boton" href="http://<!--#echo var="HTTP_HOST" -->">presionando aquí</a>
+</p>
+<br />
+<p>Sitio web alojado en <a target="_blank" href="http://tentu.com/" title="Visita TenTu.com ¡Soluciones para tu negocio en Internet!">www.tentu.com</a>
+	<br/> Lima - Perú
+   </p>
+</div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- 404 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5623129497209268"
+     data-ad-slot="4313841963"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+
+</html>

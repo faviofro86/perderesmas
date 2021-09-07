@@ -1,0 +1,395 @@
+.container {
+    padding: 50px 0;
+    position: relative;
+}
+
+.boxForm {
+    background-color: #f19800;
+    width: 529px;
+    margin: auto;
+    border-radius: 25px;
+    padding-top: 15px;
+}
+
+.boxForm h2 {
+    font-size: 24px;
+    font-family: CoreRhino45Bold;
+}
+
+.boxForm p {
+    font-size: 20px;
+    font-family: CoreRhino45Regular;
+    margin-bottom: 15px;
+}
+
+.formRegistro {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.formRegistro label {
+    color: #004694;
+    font-family: CoreRhino45Bold;
+    margin-bottom: 15px;
+}
+
+.formRegistro>label:nth-last-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+.formRegistro>label:nth-last-child(2) input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.formRegistro input {
+    background-color: #e5e5e5;
+    width: 100%;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: CoreRhino45Regular;
+}
+
+.formRegistro input[type="checkbox"] {
+    width: auto;
+}
+
+
+.boxApellidos {
+    display: flex;
+}
+
+.boxApellidos label:nth-child(1) {
+    margin-right: 15px;
+}
+
+.formRegistro input[type="submit"] {
+    background-color: #f19800;
+    color: #fff;
+    font-size: 30px;
+    font-family: CoreRhino45Bold;
+    cursor: pointer;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.formRegistro input[type="submit"]:hover {
+    opacity: .8;
+    transition: all ease-out .3s;
+}
+
+.declarobg {
+    background-color: #004694;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+.empresas {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 35px;
+}
+
+.empresa {
+    display: flex;
+    align-items: flex-start;
+    width: 50%;
+    margin: 10px 0 0 0;
+}
+
+.empresa input {
+    width: auto;
+    margin-right: 25px;
+}
+
+.empresa label {
+    margin: 0;
+    line-height: 1;
+}
+
+.logoPerderMas {
+    position: absolute;
+    left: 100px;
+    width: 14.21vw;
+}
+
+.ilustracion1 {
+    position: absolute;
+    left: 270px;
+    bottom: 0;
+    width: 18.56vw;
+}
+
+.ilustracion2 {
+    position: absolute;
+    right: 300px;
+    bottom: 0;
+    width: 19.01vw;
+}
+
+/* css de landing terminos y condiciones  */
+.containerTerminos {
+    margin-top: 140px;
+}
+
+.boxTitulo {
+    /*background-color: #f19800;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;*/
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 100px;
+    padding: 15px;
+}
+
+
+.landingTerminosCondiciones {
+    background-color: #fff;
+    color: #666666;
+    font-family: CoreRhino45Regular;
+    max-width: 80%;
+    width: 100%;
+    margin: auto;
+    padding: 25px 50px;
+    border-radius: 50px;
+}
+
+.terminosContenido {
+    height: 600px;
+    overflow-y: scroll;
+    padding-right: 20px;
+}
+
+.terminosContenido::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.terminosContenido::-webkit-scrollbar-thumb {
+    background: #ff9933;
+    border-radius: 10px;
+}
+
+.terminosContenido::-webkit-scrollbar-track {
+    background: #cccc00;
+    border-radius: 10px;
+}
+
+.terminosContenido h2 {
+    margin-bottom: 20px;
+    font-family: CoreRhino45Bold;
+}
+
+.terminosContenido h3 {
+    font-family: CoreRhino45Bold;
+}
+
+.terminosContenido {}
+
+.terminosContenido p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.containerPesa {
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    text-align: right;
+    padding: 25px;
+}
+
+/* css de landing terminos y condiciones  */
+
+
+@media (max-width: 1440px) {
+    .logoPerderMas {
+        left: 80px;
+    }
+
+    .logo {
+        width: 400px;
+    }
+
+    .ilustracion1 {
+        left: 120px;
+    }
+
+    .ilustracion2 {
+        right: 170px;
+    }
+
+    /* css de landing terminos y condiciones  */
+    .boxTitulo {
+        max-width: 80%;
+        font-size: 90px;
+    }
+
+    .landingTerminosCondiciones {
+        max-width: 80%;
+        padding: 25px;
+    }
+
+    /* css de landing terminos y condiciones  */
+
+}
+
+
+@media (max-width: 1366px) {
+    .logo {
+        width: 350px;
+    }
+
+    .boxTitulo {
+        font-size: 85px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .logoPerderMas {
+        left: 40px;
+    }
+
+    .logo {
+        width: 245px;
+    }
+
+    .ilustracion1 {
+        left: 25px;
+    }
+
+    .ilustracion2 {
+        right: 50px;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .logo {
+        position: relative !important;
+        width: 200px;
+    }
+
+    .logoGloria {
+        position: relative !important;
+        width: 80px;
+    }
+
+    .logosMobile {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .container {
+        padding: 25px 0;
+    }
+
+    .boxForm {
+        width: 90%;
+    }
+
+    .formRegistro {
+        padding: 20px 10px;
+    }
+
+    .logoPerderMas {
+        position: unset;
+        display: block;
+        width: 200px;
+        margin: 0 auto 25px;
+        left: 0;
+        right: 0;
+    }
+
+    .boxApellidos label:nth-child(1) {
+        margin-right: 10px;
+    }
+
+
+    .ilustracion1 {
+        position: relative;
+        left: 25px;
+        width: 200px;
+        top: 20px;
+    }
+
+    .ilustracion2 {
+        position: relative;
+        right: unset;
+        left: 300px;
+        width: 200px;
+    }
+
+    .declarobg {
+        font-size: 12px;
+    }
+
+    .empresas {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 15px;
+    }
+
+    .empresa input {
+        width: auto;
+        margin-right: 5px;
+    }
+
+    .containerTerminos {
+        margin-top: 50px;
+    }
+
+    .boxTitulo {
+        max-width: 90%;
+        font-size: 50px;
+    }
+
+    .landingTerminosCondiciones {
+        max-width: 90%;
+        padding: 25px;
+    }
+
+    .terminosContenido {
+        height: 500px;
+    }
+
+    .containerPesa {
+        text-align: center;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 415px) {
+    .logosMobile {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin: 0 !important;
+        width: 230px;
+    }
+
+    .ilustracion1 {
+        left: 25px;
+        width: 100px;
+        top: 10px;
+    }
+
+    .ilustracion2 {
+        left: 150px;
+        width: 120px;
+    }
+
+}

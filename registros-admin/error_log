@@ -1,0 +1,2 @@
+[01-Sep-2021 20:16:50 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'perderesmas_perderesmas'@'localhost' to database 'perderesmas' in /home/perderesmas/public_html/admin/conn.php on line 9
+[01-Sep-2021 20:18:44 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, bool given in /home/perderesmas/public_html/admin/index.php on line 124

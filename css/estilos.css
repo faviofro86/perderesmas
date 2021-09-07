@@ -1,0 +1,698 @@
+@font-face {
+    font-family: CoreRhino45Regular;
+    src: url(../fonts/CoreRhino45Regular.otf);
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: CoreRhino45Bold;
+    src: url(../fonts/core-rhino-65-bold.otf);
+    font-weight: 700;
+    font-display: swap;
+}
+
+:root {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    background-color: #e1f0f0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.white {
+    color: #fff;
+}
+
+.header {
+    background-color: #fff;
+    box-shadow: 0px 5px 25px 10px rgb(0 0 0 / 25%);
+    -webkit-box-shadow: 0px 5px 25px 10px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 5px 25px 10px rgb(0 0 0 / 25%);
+}
+
+.containerLogoCompleto {
+    background-color: #ccffff;
+    padding: 1vw;
+}
+
+.logoCompleto {
+    width: 22vw;
+    padding: 7;
+}
+
+.headerNav {
+    margin: 0 3vw 0 15vw;
+}
+
+.menu__li {
+    padding: 1vw;
+}
+
+.bordesLaterales {
+    border-left: 2px solid #cccccc;
+    border-right: 2px solid #cccccc;
+}
+
+.perfil {
+    border-right: 2px solid #cccccc;
+}
+
+.menu__a {
+    color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 1.30vw;
+}
+
+.menu__a:hover {
+    color: #ff9933;
+    text-decoration: none;
+}
+
+.menuWhatsapp {
+    width: 3.85vw;
+}
+
+.menuMensaje {
+    width: 3.85vw;
+    margin: 0 1vw;
+}
+
+.logoGloria {
+    margin-left: 2vw;
+    width: 5.10vw;
+}
+
+.nuevoReto {
+    background-image: url(../img/bannerhome.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14.7vw 10vw;
+}
+
+.nuevoRetoTitutlo {
+    font-size: 5.20vw;
+    font-family: CoreRhino45Bold;
+    max-width: 48vw;
+}
+
+.articulos {
+    display: flex;
+}
+
+
+
+.articuloDestacado {
+    background-image: url(../img/articuloDestacado.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding: 28vw 10vw 4.5vw 5vw;
+    width: 50%;
+}
+
+.articulosSecundarios {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.articulo_1 {
+    background-image: url(../img/articulo_1.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    padding: 7.2vw 10vw 7.2vw 5vw;
+}
+
+.articulo_2 {
+    background-image: url(../img/articulo_2.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    padding: 6vw 24vw 6vw 5vw;
+}
+
+.tituloArticulo {
+    color: #336699;
+    font-family: CoreRhino45Bold;
+    font-size: 2.08vw;
+    margin-bottom: 1vw;
+}
+
+.btnArticulo {
+    background-color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 1.30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 2vw;
+}
+
+.btnArticulo:Hover {
+    color: #fff;
+    opacity: .7;
+    transition: all ease-in .3s;
+    text-decoration: none;
+}
+
+.departamentoNutricion {
+    background-image: url(../img/departamentoNutricion.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -1vw;
+    padding: 16vw 10vw;
+}
+
+.tituloDeparamento {
+    font-size: 5.20vw;
+    font-family: CoreRhino45Bold;
+    max-width: 48vw;
+}
+
+.parrafoDuda {
+    font-family: CoreRhino45Bold;
+    font-size: 1.04vw;
+    margin-bottom: 1.5vw;
+    margin-top: 1.5vw;
+}
+
+.correoNutricion {
+    background-color: #ccffff;
+    color: #0099cc;
+    font-family: CoreRhino45Bold;
+    font-size: 1.04vw;
+    border-radius: 2vw;
+    padding: 0.52vw 1vw;
+}
+
+.correoNutricion:hover {
+    text-decoration: none;
+    color: #0099cc;
+    opacity: .8;
+    transition: all ease-in .3s;
+}
+
+/* PERDER MÁS css */
+.perderMas {
+    background-image: url(../img/bienvenidoPerderMas.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 15vw 10vw;
+}
+
+.perderMasBienvenido {
+    font-family: CoreRhino45Bold;
+    font-size: 3.64vw;
+    line-height: 1;
+
+}
+
+.perderMasTitulo {
+    font-size: 5.20vw;
+    font-family: CoreRhino45Bold;
+    line-height: 1;
+}
+
+.perderMasBtn {
+    background-color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 1.30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8vw;
+    height: 3vw;
+    border-radius: 2vw;
+    margin-top: 2vw;
+}
+
+.perderMasBtn:hover {
+    color: #fff;
+    transition: all ease .3s;
+    text-decoration: unset;
+    opacity: .8;
+}
+
+.grasaCorporalContainer {
+    background-color: #fff;
+    padding: 2.5vw;
+}
+
+
+
+.tituloGrasaCorporal {
+    color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 2.60vw;
+}
+
+.subtituloCharts {
+    color: #ff9933;
+    font-family: CoreRhino45Bold;
+    font-size: 2.08vw;
+}
+
+
+.personRunning {
+    width: 12vw;
+}
+
+/* premios css */
+
+.premiosContainer {
+    background-image: url(../img/premiosbanner.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center -1vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2vw 0;
+}
+
+.premiosTitulo {
+    font-size: 3.64vw;
+    font-family: CoreRhino45Bold;
+    max-width: 54vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.estosPremios {
+    font-size: 5.20vw;
+}
+
+.imagenReferencial {
+    color: #999999;
+    text-align: center;
+    font-size: 0.83vw;
+}
+
+.premio_1 {
+    width: 30vw;
+}
+
+.premio_2 {
+    width: 30vw;
+}
+
+
+/* css perfil */
+.perfilContainer {
+    padding: 2.6vw 0;
+}
+
+.perfil__saludo {
+    color: #cccc00;
+    font-family: CoreRhino45Bold;
+    font-size: 1.56vw;
+    margin-bottom: 2.6vw;
+}
+
+.perfil__titulo {
+    font-family: CoreRhino45Bold;
+    font-size: 1.56vw;
+    color: #cccc00;
+}
+
+.perfil__cambiarPassword {
+    font-family: CoreRhino45Bold;
+    font-size: 1.56vw;
+    color: #cccc00;
+}
+
+.formDatos,
+.formPassword {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+    padding: 1vw;
+    margin: 0 auto 2.60vw;
+    border-radius: 1vw;
+}
+
+.formDatos label,
+.formPassword label {
+    color: #004694;
+    font-family: CoreRhino45Bold;
+    margin-bottom: 15px;
+}
+
+.formDatos input,
+.formPassword input {
+    background-color: #e5e5e5;
+    width: 100%;
+    border: 0;
+    border-radius: 0.52vw;
+    padding: 0.52vw;
+    font-family: CoreRhino45Regular;
+}
+
+.formDatos .complexsionContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formDatos select {
+    background-color: #e5e5e5;
+    width: 100%;
+    border: 0;
+    border-radius: 0.52vw;
+    padding: 0.52vw;
+    font-family: CoreRhino45Regular;
+}
+
+
+.formDatos input[type="submit"],
+.formPassword input[type="submit"] {
+    background-color: #f19800;
+    color: #fff;
+    font-size: 1.04vw;
+    font-family: CoreRhino45Bold;
+    cursor: pointer;
+    width: 100%;
+}
+
+.menuBtnHamburguer,
+.menuBtnCerrar {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .header {
+        justify-content: space-between;
+        padding-right: 5vw;
+    }
+
+    .containerLogoCompleto {
+        padding: 2.5vw 5vw;
+    }
+
+    .logoCompleto {
+        width: 40vw;
+    }
+
+    .menuMobile {
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: -200vw;
+        width: 100vw;
+        height: 100vh;
+        z-index: 9;
+        transition: all ease-in .3s;
+    }
+
+    .active {
+        left: 0;
+    }
+
+    .menuBtnHamburguer {
+        display: block;
+        width: 8vw;
+    }
+
+    .menuBtnCerrar {
+        display: block;
+        width: 8vw;
+        position: absolute;
+        top: 10vw;
+        right: 6vw;
+    }
+
+    .headerNav {
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .socialMedia {
+        flex-direction: column;
+    }
+
+    .bordesLaterales {
+        border: 0;
+    }
+
+    .perfil {
+        border: 0;
+    }
+
+    .menu__li {
+        margin: 1.5vw 0;
+    }
+
+    .menu__a {
+        font-size: 6.66vw;
+    }
+
+    .menuWhatsapp {
+        width: 15vw;
+        margin-top: 1.5vw;
+    }
+
+    .menuMensaje {
+        width: 15vw;
+        margin: 5vw 0;
+    }
+
+    .logoGloria {
+        width: 25vw;
+        margin: 5vw 0 0 0;
+    }
+
+    .nuevoReto {
+        background-size: cover;
+        background-position: center -3vw;
+        padding: 67vw 10vw;
+    }
+
+    .nuevoRetoTitutlo {
+        font-size: 9.33vw;
+        max-width: 60vw;
+    }
+
+    .articulos {
+        flex-direction: column;
+    }
+
+    .articuloDestacado {
+        width: 100%;
+        padding: 28vw 10vw 10vw;
+    }
+
+    .tituloArticulo {
+        font-size: 6.66vw;
+        margin-bottom: 5vw;
+    }
+
+    .btnArticulo {
+        font-size: 5.33vw;
+        width: 32vw;
+        height: 10vw;
+        border-radius: 6vw;
+    }
+
+    .articulosSecundarios {
+        width: 100%;
+    }
+
+    .articulo_1 {
+        padding: 10vw;
+    }
+
+    .articulo_2 {
+        padding: 10vw;
+    }
+
+    .departamentoNutricion {
+        background-size: cover;
+    }
+
+    .tituloDeparamento {
+        font-size: 8vw;
+        max-width: 66vw;
+    }
+
+    .parrafoDuda {
+        font-size: 5.33vw;
+        margin: 5vw 0;
+    }
+
+    .correoNutricion {
+        font-size: 3.86vw;
+        border-radius: 3vw;
+        padding: 0.52vw 2vw;
+    }
+
+    .tituloGrasaCorporal {
+        font-size: 8vw;
+    }
+
+    .subtituloCharts {
+        font-size: 6.66vw;
+    }
+
+
+    .personRunning {
+        margin: auto;
+        width: 30vw;
+        display: block;
+    }
+
+    .perderMas {
+        background-size: cover;
+        padding: 30vw 10vw;
+    }
+
+    .perderMasBienvenido {
+        font-size: 6.66vw;
+    }
+
+    .perderMasTitulo {
+        font-size: 8vw;
+    }
+
+    .perderMasBtn {
+        font-size: 6.66vw;
+        width: 38vw;
+        height: 10vw;
+        border-radius: 6vw;
+        margin-top: 5vw;
+    }
+
+    /* premios css */
+
+    .premiosContainer {
+        background-size: cover;
+        background-position: -89vw -2.7vw;
+        flex-direction: column;
+        padding: 5vw 0;
+    }
+
+    .premiosTitulo {
+        margin-bottom: 5vw;
+        font-size: 5.33vw;
+        max-width: 80vw;
+    }
+
+    .estosPremios {
+        font-size: 6.66vw;
+    }
+
+    .imagenReferencial {
+        font-size: 3.73vw;
+    }
+
+    .premio_1 {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    .premio_2 {
+        width: 80%;
+        margin: auto;
+        display: block;
+    }
+
+    /* css perfil */
+    .perfilContainer {
+        padding: 10vw 5vw;
+    }
+
+    .perfil__saludo {
+        font-size: 6.66vw;
+        margin-bottom: 5vw;
+    }
+
+    .perfil__titulo {
+        font-size: 6.66vw;
+    }
+
+    .perfil__cambiarPassword {
+        font-size: 6.66vw;
+    }
+
+    .formDatos,
+    .formPassword {
+        width: 80vw;
+        padding: 3vw;
+        margin: 0 auto 5vw;
+        border-radius: 5vw;
+    }
+
+    .formDatos label,
+    .formPassword label {
+        margin-bottom: 4vw;
+    }
+
+    .formDatos input,
+    .formPassword input {
+        border-radius: 2vw;
+        padding: 1vw 2vw;
+    }
+
+    .formDatos select {
+        border-radius: 2vw;
+        padding: 1.5vw 2vw;
+    }
+
+    .formDatos input[type="submit"],
+    .formPassword input[type="submit"] {
+        font-size: 6.66vw;
+    }
+
+
+}

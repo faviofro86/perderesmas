@@ -1,0 +1,192 @@
+﻿<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta name="description" content="Sitio Web alojado en www.tentu.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      maximum-scale=1">
+    <!--[if gte mso 9]>
+    <xml>
+      <o:OfficeDocumentSettings>
+        <o:AllowPNG/>
+        <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+    </xml>
+  <![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+	font-size: 13px;
+	height: 100%;
+	margin: 0;
+}
+small{
+	color:#eeeeee;
+	}
+body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	/*font: 100% "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;*/
+	font: 100% 'Fredoka One', cursive;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	/*background: -webkit-radial-gradient(center ellipse, #eee 0%, #ffffff 80%);
+	background: radial-gradient(ellipse at center, #eee 0%, #ffffff 80%);
+background-color: #051044;
+background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc0MDAnIGhlaWdodD0nNDAwJyB2aWV3Qm94PScwIDAgNDAwIDQwMCc+Cgk8ZGVmcz4KCQk8cGF0dGVybiBpZD0nYmx1ZXN0cmlwZScgcGF0dGVyblVuaXRzPSd1c2VyU3BhY2VPblVzZScgeD0nMCcgeT0nMCcgd2lkdGg9JzYuNycgaGVpZ2h0PSc2LjcnIHZpZXdCb3g9JzAgMCA0IDQnID4KCQkJPGxpbmUgeDE9Jy0xJyB5MT0nLTEnIHgyPSc0JyB5Mj0nNCcgc3Ryb2tlPScjMzM0JyBzdHJva2Utd2lkdGg9JzEnLz4KCQkJPGxpbmUgeDE9JzMnIHkxPSctMScgeDI9JzUnIHkyPScxJyBzdHJva2U9JyMzMzQnIHN0cm9rZS13aWR0aD0nMScvPgoJCQk8bGluZSB4MT0nLTEnIHkxPSczJyB4Mj0nMScgeTI9JzUnIHN0cm9rZT0nIzMzNCcgc3Ryb2tlLXdpZHRoPScxJy8+CgkJPC9wYXR0ZXJuPiAKCQk8ZmlsdGVyIGlkPSdmdXp6JyB4PScwJyB5PScwJz4KCQkJPGZlVHVyYnVsZW5jZSB0eXBlPSd0dXJidWxlbmNlJyBiYXNlRnJlcXVlbmN5PScuNScgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJCQk8ZmVDb252b2x2ZU1hdHJpeCBvcmRlcj0nMywzJyBrZXJuZWxNYXRyaXg9JzAsLS4yNSwwLC0uMjUsMiwtLjI1LDAsLS4yNSwwJy8+CgkJPC9maWx0ZXI+Cgk8L2RlZnM+Cgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWxsPSd1cmwoI2JsdWVzdHJpcGUpJy8+Cgk8cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCgjZnV6eiknIG9wYWNpdHk9JzAuMzcnLz4KPC9zdmc+);*/
+background-color: #03031a;
+background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHhtbG5zOnhsaW5rPSdodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rJyB3aWR0aD0nNjAwJyBoZWlnaHQ9JzYwMCcgdmlld0JveD0nMCAwIDE1MCAxNTAnPgo8ZmlsdGVyIGlkPSdpJyB4PScwJyB5PScwJz4KCTxmZUNvbG9yTWF0cml4IHR5cGU9J21hdHJpeCcgdmFsdWVzPScxIDAgMCAwIDAgIDAgMSAwIDAgMCAgMCAwIDEgMCAwICAwIDAgMCAwIDAnIC8+CjwvZmlsdGVyPgo8ZmlsdGVyIGlkPSduJyB4PScwJyB5PScwJz4KCTxmZVR1cmJ1bGVuY2UgdHlwZT0ndHVyYnVsZW5jZScgYmFzZUZyZXF1ZW5jeT0nLjcnIHJlc3VsdD0nZnV6eicgbnVtT2N0YXZlcz0nMicgc3RpdGNoVGlsZXM9J3N0aXRjaCcvPgoJPGZlQ29tcG9zaXRlIGluPSdTb3VyY2VHcmFwaGljJyBpbjI9J2Z1enonIG9wZXJhdG9yPSdhcml0aG1ldGljJyBrMT0nMCcgazI9JzEnIGszPSctNzMnIGs0PScuMDEnIC8+CjwvZmlsdGVyPgo8cmVjdCB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjMDMwMzFhJy8+CjxyZWN0IHg9Jy0xJScgeT0nLTElJyB3aWR0aD0nMTAyJScgaGVpZ2h0PScxMDIlJyBmaWxsPScjZmZmJyBmaWx0ZXI9J3VybCgjbiknIG9wYWNpdHk9JzEnLz4KPHJlY3QgeD0nLTElJyB5PSctMSUnIHdpZHRoPScxMDIlJyBoZWlnaHQ9JzEwMiUnIGZpbGw9JyMwMzAzMWEnIGZpbHRlcj0ndXJsKCNpKScgb3BhY2l0eT0nMScvPgo8L3N2Zz4=);
+	color:#eeeeee;
+	text-align:center;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.circle {
+  position: relative;
+  width: 35em;
+  border-radius: 50%;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+ box-shadow:
+  inset 15.15544em -8.75em 0em 0em rgba(255, 0, 0, 0.45),
+  inset -15.15544em -8.75em 0em 0em rgba(235, 255, 0, 0.54),
+  inset 0 17.5em 0em 0em rgba(0, 133, 255, 0.53),
+  inset -15.15544em 8.75em 0em 0em rgba(22, 243, 3, 0.55),
+  inset 15.15544em 8.75em 0em 0em rgba(190, 11, 224, 0.55),
+  inset 0 -17.5em 0em 0em rgba(253, 127, 11, 0.54);
+  -webkit-animation: spin 30s linear infinite;
+          animation: spin 30s linear infinite;
+}
+.circle:hover {
+  box-shadow: inset 1.89443em -1.09375em 0em 0em rgba(255, 0, 0, 0.45),
+   			inset -1.89443em -1.09375em 0em 0em rgba(235, 255, 0, 0.54),
+    		inset 0 2.1875em 0em 0em rgba(0, 133, 255, 0.53),
+     		inset -1.89443em 1.09375em 0em 0em rgba(22, 243, 3, 0.55),
+      	inset 1.89443em 1.09375em 0em 0em rgba(190, 11, 224, 0.55),
+      	inset 0 -2.1875em 0em 0em rgba(253, 127, 11, 0.54);
+}
+.circle:before {
+  content: "";
+  display: block;
+  padding-top: 100%;  
+}
+
+a:active, a:focus {
+outline: none;
+}
+
+#content {
+	font-size:2rem;
+  position: absolute;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align:center;
+  color:transparent;
+  z-index: -50;
+}
+
+a:hover + #content{
+	 color:#eeeeee;
+	}
+a:hover + #content > .tentu{
+	 color:#9FCC3B;
+	}
+#top {
+  position: absolute;
+  float: left;
+  top: 6rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:2rem;
+}
+#bottom {
+  position: absolute;
+  float: left;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  html {
+    /* reducing base font size will reduce all rem sizes */
+    font-size: 14px; 
+  }
+
+.circle {
+	width: 17rem;
+  box-shadow: inset 6.78886em -5.1em 0em 0em rgba(255, 0, 0, 0.45),
+   			inset -6.78886em -5.1em 0em 0em rgba(235, 255, 0, 0.54),
+    		inset 0 6.375em 0em 0em rgba(0, 133, 255, 0.53),
+     		inset -6.78886em 5.1em 0em 0em rgba(22, 243, 3, 0.55),
+      	inset 6.78886em 5.1em 0em 0em rgba(190, 11, 224, 0.55),
+				inset 0 -6.375em 0em 0em rgba(253, 127, 11, 0.54);
+}
+#content {
+	font-size:1rem;
+}
+#top {
+  top: 4rem;
+  font-size:.9rem;
+}
+#bottom {
+  bottom: 0.1rem;
+  font-size:.8rem;
+}
+}
+</style>
+<title>Sitio en construcción - <?php echo $_SERVER["HTTP_HOST"]; ?> - Alojado en TenTu.com</title>
+</head>
+
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+	<p id="top">Bienvenid@s a<br /><span style="color:#9FCC3B"><?php echo $_SERVER["HTTP_HOST"]; ?></span><br /><br />[ SITIO EN CONSTRUCCIÓN ]</p>
+
+<a style="text-decoration: none;display:block;" target="_blank" href="http://tentu.com" title="Visita TenTu.com ¡Soluciones para tu negocio en Internet!">
+	<div class="circle">
+</div></a>
+	  <div id="content">Página alojada en<br /><span class="tentu">TENTU.COM</span>
+  </div>
+<p id="bottom">
+	<small>Si ya cargaste tu página web al servidor de TenTu.com y sigues viendo esta página, borra el archivo index.php (esta pantalla).</small>
+	</p>
+
+</body>
+
+</html>
