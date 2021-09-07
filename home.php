@@ -2,7 +2,6 @@
 session_start();
 include_once('includes/conexion.php');
 if(isset($_SESSION['logged_in'])){
-    $_SESSION['doc'] = $datos['dni'];
 
 ?>
 <!DOCTYPE html>
