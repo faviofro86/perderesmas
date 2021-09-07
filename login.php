@@ -3,7 +3,7 @@ session_start();
 
 include_once('includes/conexion.php');
 if (isset($_SESSION['logged_in'])) {
-    header('Location: home.php');
+    header('Location: home.php'.$var);
 } else {
     if (isset($_POST['usuario'], $_POST['password'])) {
         $usuario = $_POST['usuario'];
@@ -25,7 +25,7 @@ if (isset($_SESSION['logged_in'])) {
                 header('Location: home.php/'.$var);
                 exit();
             } else {
-                $error = "Valores incorrectos";
+                $error = "Datos incorrectos";
             }
         }
     }
