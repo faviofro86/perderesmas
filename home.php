@@ -67,6 +67,7 @@ if(isset($_SESSION['logged_in'])){
             <p class="white parrafoDuda">Si tienes alguna duda puedes comunicarte al correo:</p>
             <a class="correoNutricion" href="mailto:consultorionutricion@deprodeca.com.pe" target="_blank" rel="noopener noreferrer">consultorionutricion@deprodeca.com.pe</a>
         </section>
+        <small><?php echo $_SESSION['doc']; ?></small>
     </main>
 
     <script src="js/scripts.js"></script>
