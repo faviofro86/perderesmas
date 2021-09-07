@@ -87,7 +87,7 @@ if (isset($_SESSION['logged_in'])) {
                                 <input type="checkbox" name="recordarme">Recordarme
                             </label>
 
-                            <a class="loginMiembro" href="#" rel="noopener noreferrer"> ¿Olvidaste tu contraseña? </a> 
+                            <!-- <a class="loginMiembro" href="#" rel="noopener noreferrer"> ¿Ya eres un miembro? </a> -->
                         </div>
 
                         <input class="btnLogin white" type="submit" value="INICIO">
