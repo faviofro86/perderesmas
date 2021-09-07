@@ -1,3 +1,13 @@
+<?php
+session_start();
+include_once('includes/conexion.php');
+include_once('includes/usuario.php');
+if(isset($_SESSION['logged_in'])){
+    $user = new Usuario;
+    $doc = $_GET['doc'];
+    $datos = $user->datos($doc);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,7 +58,7 @@
                     </li>
                     <li class="menu__li bordesLaterales"><a class="menu__a menuTycColor"
                             href="terminos_y_condiciones.html" rel="noopener noreferrer">T y C</a></li>
-                    <li class="menu__li perfil"><a class="menu__a" href="perfil.php" target="_blank"
+                    <li class="menu__li perfil"><a class="menu__a" href="perfil.php?doc=<?php echo $_SESSION['doc'];?>" target="_blank"
                             rel="noopener noreferrer">Perfil</a></li>
                     <li class="menu__li"><a class="menu__a" href="logout.php" target="_blank" rel="noopener noreferrer">Salir</a>
                     </li>
@@ -67,7 +77,7 @@
     </header>
     <main role="main">
         <section class="perfilContainer textCenter">
-            <p class="perfil__saludo">Hola, {Nombres y apellidos}</p>
+            <p class="perfil__saludo">Hola, <?php echo $datos['nombres'] . ' ' . $datos['appaterno'] ; ?></p>
 
             <p class="perfil__titulo white textCenter">MIS DATOS</p>
             <form id="formDatos" class="formDatos" action="">
@@ -110,3 +120,6 @@
 
     <script src="js/scripts.js"></script>
 </body>
+<?php }else{
+    header('Location: ../index.php');
+}?>

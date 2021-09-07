@@ -20,6 +20,7 @@ if (isset($_SESSION['logged_in'])) {
             if ($num == 1) {
                 $_SESSION['logged_in'] = true;
                 $_SESSION['username'] = $datos['nombres'];
+                $_SESSION['doc'] = $datos['dni'];
                 header('Location: home.php');
                 exit();
             } else {
