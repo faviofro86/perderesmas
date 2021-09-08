@@ -1,9 +1,10 @@
 <?php
 session_start();
-include_once('conexion.php');
+/**include_once('conexion.php');
 $email = $_POST['email'];
 $dni = $_POST['dni'];
 $ind = md5($_POST['dni']);
+**/
 
 
 function logout(){
@@ -17,7 +18,7 @@ if(isset($_GET['a'])){
 }
 
 
-if(isset($_GET['b'])){
+/**if(isset($_GET['b'])){
     $header = 'From: ' . 'noreply@somosucv.edu.pe' . " \r\n";
     $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
     $header .= "Mime-Version: 1.0 \r\n";
@@ -41,7 +42,7 @@ if(isset($_GET['b'])){
     $query->bindValue(2, $dni);
     $query->execute();
     
-}
+}**/
 
 //if(isset($_GET['c'])){}
 
