@@ -10,6 +10,7 @@ class Usuario{
         $query = $pdo->prepare("SELECT * FROM registros WHERE dni = ?");
         $query->bindValue(1, $doc);
         $query->execute();
+        
         return $query->fetch();
     }
     
@@ -26,7 +27,12 @@ class Usuario{
         $query = $pdo->prepare("SELECT grasa FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $query->fetchAll();
+        $g=$query->fetchAll();
+        $grasa = array();
+        foreach($g as $ga){
+            $grasa[]=$ga['grasa'];
+        }
+        return $grasa;
     }
     
     public function imc($a){
