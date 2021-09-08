@@ -21,6 +21,46 @@ class Usuario{
         return $query->fetch();
     }
     
+    public function grasa($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.grasa FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
+    public function imc($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.imc FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
+    public function peso($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.peso FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
+    public function cintura($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.cintura FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
+    public function brazo($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.cintura FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
 }
 
 ?>
