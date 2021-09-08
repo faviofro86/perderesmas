@@ -25,4 +25,7 @@ echo json_encode($brazo);
 $valores = $user->valores($dni);
 echo json_encode($valores);
 
+$valoresd = $user->valoresd($dni);
+echo json_encode($valoresd);
+
 ?>

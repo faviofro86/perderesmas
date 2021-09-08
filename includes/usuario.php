@@ -69,6 +69,14 @@ class Usuario{
         return $quert->fetch();
     }
     
+    public function valoresd($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT * FROM datos WHERE dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $quert->fetch();
+    }
+    
 }
 
 ?>
