@@ -8,7 +8,7 @@ if(isset($_POST['email'])){
 }
 if(isset($_POST['dni'])){
     $dni = $_POST['dni'];
-    $ind = md5($_POST['dni']);
+    $ind = ((($dni + 1)*3)+3);
 }
 
 
@@ -28,10 +28,11 @@ function recovery($a, $b, $c){
     
     
     $mensaje = "Este mensaje fue enviado por Perderesmas.pe";
-    $mensaje .= " \r\n\r\n";
+    $mensaje .= "</br>";
     $mensaje .= "Haga clic en el enlace a continuación para restablecer su contraseña: ";
+    $mensaje .= "</br>";
     $mensaje .= "https://perderesmas.pe/functions.php?c=" . $c ;
-    $mensaje .= " \r\n\r\n";
+    $mensaje .= "</br>";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
     $asunto = "Recuperación de contraseña - Perderesmas.pe ";
@@ -45,6 +46,15 @@ function recovery($a, $b, $c){
     header('Location: ../recuperar.php?ok=1');
 }
 
+function restablecer($a, $b){
+    global $pdo;
+    $query = $pdo->prepare("UPDATE `registros` SET `recovery`= 0, `password`= ? WHERE `dni` = ? AND `recovery` = 1");
+    $query->bindValue(1, $a);
+    $query->bindValue(2, $b);
+    $query->execute();
+    header('Location: ../index.php');
+}
+
 
 if(isset($_GET['a'])){
     logout();
@@ -56,9 +66,17 @@ if(isset($_POST['email']) && isset($_POST['dni'])){
 }
 
 
+if(isset($_GET['c'];)){
+    $c = $_GET['c'];
+    header('Location: ../newpass.php?c='.$c);
+}
 
-//if(isset($_GET['b'])){}
 
-//if(isset($_GET['c'])){}
+if(isset($_POST['newpass'])){
+    $newpass = $_POST['newpass'];
+    $ind2 = $_POST['ind2'];
+    restablecer($newpass, $ind2);
+}
+
 
 ?>
