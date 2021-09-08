@@ -45,7 +45,7 @@
                         <input type="text" name="newpass" placeholder="Contraseña nueva" required>
                     </label>
                     <label class="w-100" for="dni">
-                        <input type="text" name="newpass2" placeholder="Confirmar contraseña">
+                        <input type="text" name="newpass2" placeholder="Confirmar contraseña" required>
                     </label>
                     <input type="hidden" name="ind2" value="<?php echo $_GET['c']; ?>">
 
