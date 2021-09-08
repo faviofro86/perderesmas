@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 include_once('conexion.php');
 include_once('usuario.php');
@@ -77,7 +78,7 @@ if(isset($_GET['c'])){
     header('Location: ../newpass.php?c='.$c);
 }
 
-
+//Ahora valida con ID y no con DNI
 if(isset($_POST['newpass'])){
     $newpass = md5($_POST['newpass']);
     $id2 = $_POST['ind2'];

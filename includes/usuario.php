@@ -1,5 +1,5 @@
 <?php
-//prueba
+
 include_once('conexion.php');
 
 class Usuario{
