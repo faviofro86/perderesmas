@@ -12,6 +12,7 @@ if(isset($_POST['dni'])){
     $dni = $_POST['dni'];
     $user = new Usuario;
     $id = $user->iddni($dni);
+    $id = $id['id'];
     $ind = ((($dni + 1)*3)+3);
 }
 
