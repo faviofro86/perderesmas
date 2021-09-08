@@ -74,7 +74,7 @@ class Usuario{
         $query = $pdo->prepare("SELECT * FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $query->fetch();
+        return $query->fetchAll();
     }
     
 }
