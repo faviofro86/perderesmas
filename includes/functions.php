@@ -8,8 +8,8 @@ $ind = md5($_POST['dni']);
 
 function logout(){
     session_destroy();
-    //header('Location: ../index.php');
-    echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
+    header('Location: ../index.php');
+    //echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
 if(isset($_GET['a'])){
@@ -32,7 +32,7 @@ if(isset($_GET['b'])){
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
     $asunto = "Suscripcion desde SOMOSUCV - " 
-    $para = "hmayta@ucv.edu.pe";
+    $para = "hmayta@edu.pe";
     mail($para, $asunto, utf8_decode($mensaje), $header);
     
     global $pdo;
@@ -43,8 +43,6 @@ if(isset($_GET['b'])){
     
 }
 
-if(isset($_GET['c'])){
-    
-}
+//if(isset($_GET['c'])){}
 
 ?>
