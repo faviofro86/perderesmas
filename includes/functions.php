@@ -31,7 +31,7 @@ function recovery($a, $b, $c){
     $mensaje .= "</br>";
     $mensaje .= "Haga clic en el enlace a continuación para restablecer su contraseña: ";
     $mensaje .= "</br>";
-    $mensaje .= "https://perderesmas.pe/functions.php?c=" . $c ;
+    $mensaje .= "https://perderesmas.pe/includes/functions.php?c=" . $c ;
     $mensaje .= "</br>";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
@@ -66,7 +66,7 @@ if(isset($_POST['email']) && isset($_POST['dni'])){
 }
 
 
-if(isset($_GET['c'];)){
+if(isset($_GET['c'])){
     $c = $_GET['c'];
     header('Location: ../newpass.php?c='.$c);
 }
