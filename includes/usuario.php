@@ -23,7 +23,7 @@ class Usuario{
     
     public function grasa($a){
         global $pdo;
-        $query = $pdo->prepare("SELECT d.grasa FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query = $pdo->prepare("SELECT grasa FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
         return $query->fetchAll();
