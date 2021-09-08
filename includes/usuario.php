@@ -63,10 +63,10 @@ class Usuario{
     
     public function valores($a){
         global $pdo;
-        $query = $pdo->prepare("SELECT d.grasa, d.imc, d.peso, d.cintura, d.brazo FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ? GROUP BY d.imc");
+        $query = $pdo->prepare("SELECT d.grasa, d.imc, d.peso, d.cintura, d.brazo FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $quert->fetch();
+        return $query->fetch();
     }
     
     public function valoresd($a){
@@ -74,7 +74,7 @@ class Usuario{
         $query = $pdo->prepare("SELECT * FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $quert->fetch();
+        return $query->fetch();
     }
     
 }
