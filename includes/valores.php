@@ -21,4 +21,7 @@ echo json_encode($cintura);
 $brazo = $user->brazo($dni);
 echo json_encode($brazo);
 
+$valores = $user->valores($dni);
+echo json_encode($valores);
+
 ?>

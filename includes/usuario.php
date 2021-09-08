@@ -61,6 +61,14 @@ class Usuario{
         return $query->fetch();
     }
     
+    public function valores($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT d.grasa, d.imc, d.peso, d.cintura, d.brazo FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ? GROUP BY d.imc");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $quert->fetch();
+    }
+    
 }
 
 ?>
