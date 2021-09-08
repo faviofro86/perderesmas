@@ -11,7 +11,7 @@ if(isset($_GET['a'])){
 
 public function logout(){
     session_destroy();
-    echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
+    header('Location: ../index.php');//echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
 
