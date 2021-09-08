@@ -20,7 +20,7 @@ function logout(){
 }
 
 
-function recovery($email, $dni, $ind){
+function recovery($a, $b, $c){
     $header = 'From: ' . 'noreply@perderesmas.pe' . " \r\n";
     $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
     $header .= "Mime-Version: 1.0 \r\n";
@@ -30,17 +30,17 @@ function recovery($email, $dni, $ind){
     $mensaje = "Este mensaje fue enviado por Perderesmas.pe";
     $mensaje .= " \r\n\r\n";
     $mensaje .= "Haga clic en el enlace a continuación para restablecer su contraseña: ";
-    $mensaje .= "https://perderesmas.pe/functions.php?c=" . $ind ;
+    $mensaje .= "https://perderesmas.pe/functions.php?c=" . $c ;
     $mensaje .= " \r\n\r\n";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
     $asunto = "Recuperación de contraseña - Perderesmas.pe ";
-    mail($email, $asunto, utf8_decode($mensaje), $header);
+    mail($a, $asunto, utf8_decode($mensaje), $header);
     
     global $pdo;
     $query = $pdo->prepare("UPDATE `registros` SET `recovery`= 1 WHERE `email`=? AND `dni` = ?");
-    $query->bindValue(1, $email);
-    $query->bindValue(2, $dni);
+    $query->bindValue(1, $a);
+    $query->bindValue(2, $b);
     $query->execute();
     header('Location: ../recuperar.php?ok=1');
 }

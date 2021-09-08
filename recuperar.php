@@ -40,12 +40,12 @@
                 </p> -->
                 <!--Comentario de prueba-->
                 <img class="logoLoginForm" src="img/logoperderEsMasWhite.png" alt="logo">
-                <form class="formLogin" action="functions.php" method="post">
+                <form class="formLogin" action="includes/functions.php" method="post">
                     <label class="w-100" for="email">
                         <input type="email" name="email" placeholder="E-mail">
                     </label>
                     <label class="w-100" for="dni">
-                        <input type="password" name="dni" placeholder="dni">
+                        <input type="text" name="dni" placeholder="DNI">
                     </label>
                     <div><small class="alertaLogin"></small>
                         <?php if (isset($ok)) { ?>
