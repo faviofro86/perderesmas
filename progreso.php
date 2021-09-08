@@ -1,3 +1,9 @@
+<?php
+session_start();
+include_once('includes/conexion.php');
+if(isset($_SESSION['logged_in'])){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -103,3 +109,6 @@
     <script src="js/charts.js"></script>
 
 </body>
+<?php }else{
+    header('Location: index.php');
+}?>

@@ -5,7 +5,7 @@
                     <li class="menu__li"><a class="menu__a inicio" href="home" rel="noopener noreferrer">Inicio</a></li>
                     <li class="menu__li bordesLaterales"><a class="menu__a progreso" href="progreso" rel="noopener noreferrer">Progreso</a></li>
                     <li class="menu__li"><a class="menu__a premios" href="premios" rel="noopener noreferrer">Premios</a></li>
-                    <li class="menu__li bordesLaterales"><a class="menu__a menuTycColor" href="terminos_y_condiciones.html" rel="noopener noreferrer">T y C</a></li>
+                    <li class="menu__li bordesLaterales"><a class="menu__a menuTycColor" href="terminos_y_condiciones" rel="noopener noreferrer">T y C</a></li>
                     <li class="menu__li perfil"><a class="menu__a" href="perfil" rel="noopener noreferrer">Perfil</a></li>
                     <li class="menu__li"><a class="menu__a" href="logout" rel="noopener noreferrer">Salir</a></li>
                 </ul>
