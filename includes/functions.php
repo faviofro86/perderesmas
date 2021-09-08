@@ -42,6 +42,7 @@ function recovery($email, $dni, $ind){
     $query->bindValue(1, $email);
     $query->bindValue(2, $dni);
     $query->execute();
+    header('Location: ../recuperar.php?ok=1');
 }
 
 

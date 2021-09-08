@@ -48,8 +48,8 @@
                         <input type="password" name="dni" placeholder="dni">
                     </label>
                     <div><small class="alertaLogin"></small>
-                        <?php if (isset($mensaje)) { ?>
-                            <small class="alertaLogin"><?php echo $mensaje; ?></small>
+                        <?php if (isset($ok)) { ?>
+                            <small class="alertaLogin"><?php echo "Correo de recuperación enviado"; ?></small>
                         <?php } ?>
                     </div>
 
