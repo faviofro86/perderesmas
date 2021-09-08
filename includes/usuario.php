@@ -26,7 +26,7 @@ class Usuario{
         $query = $pdo->prepare("SELECT d.grasa FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $query->fetch();
+        return $query->fetchAll();
     }
     
     public function imc($a){
