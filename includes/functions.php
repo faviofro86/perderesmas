@@ -1,11 +1,14 @@
 <?php
 session_start();
-/**include_once('conexion.php');
-$email = $_POST['email'];
-$dni = $_POST['dni'];
-$ind = md5($_POST['dni']);
-**/
+include_once('conexion.php');
 
+if(isset($_POST['email'])){
+    $email = $_POST['email'];
+}
+if(isset($_POST['dni'])){
+    $dni = $_POST['dni'];
+    $ind = md5($_POST['dni']);
+}
 
 function logout(){
     session_destroy();
@@ -32,9 +35,8 @@ if(isset($_GET['a'])){
     $mensaje .= " \r\n\r\n";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
-    $asunto = "Suscripcion desde SOMOSUCV - " 
-    $para = "hmayta@edu.pe";
-    mail($para, $asunto, utf8_decode($mensaje), $header);
+    $asunto = "Recuperación de contraseña - Perderesmas.pe " 
+    mail($email, $asunto, utf8_decode($mensaje), $header);
     
     global $pdo;
     $query = $pdo->prepare("UPDATE `registros` SET `recovery`= 1 WHERE `email`=? AND `dni` = ?");
