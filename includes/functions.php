@@ -5,9 +5,6 @@ $email = $_POST['email'];
 $dni = $_POST['dni'];
 $ind = md5($_POST['dni']);
 
-if(isset($_GET['a'])){
-    logout();
-}
 
 function logout(){
     session_destroy();
@@ -15,8 +12,9 @@ function logout(){
     echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
-
-
+if(isset($_GET['a'])){
+    logout();
+}
 
 
 if(isset($_GET['b'])){
