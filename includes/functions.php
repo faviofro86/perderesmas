@@ -1,12 +1,13 @@
 <?php
 session_start();
+$email = $_POST['email'];
+$dni = $_POST['dni'];
 
-if (isset($_GET['a'])){
-    session_start();
+
+if(isset($_GET['a'])){
     session_destroy();
-    header('Location: index.php');
-}else{
-    header('Location: ../home.php');
+    echo "<meta http-equiv='refresh' content='1;URL=index.php'>";
 }
+
 
 ?>
