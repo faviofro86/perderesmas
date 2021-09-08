@@ -1,3 +1,10 @@
+<?php
+include_once('includes/nutri.php');
+$nutri = new Nutricionista;
+$contacto = $nutri->datos($doc);
+$wasap="https://api.whatsapp.com/send/?phone=51".$contacto['telefono'];
+?>
+        
         <div id="menuMobile" class="d-flex align-items-center menuMobile">
             <img id="menuBtnCerrar" class="menuBtnCerrar" src="https://pipartners.cl/wp-content/uploads/2021/07/boton-cerrar.png" alt="cerrar">
             <nav class="headerNav">
@@ -11,7 +18,7 @@
                 </ul>
             </nav>
             <div class="socialMedia d-flex align-items-center">
-                <a href="">
+                <a href="<?php echo $wasap; ?>">
                     <img class="menuWhatsapp" src="img/whatsapp.png" alt="whatsaapp">
                 </a>
                 <a href="">
