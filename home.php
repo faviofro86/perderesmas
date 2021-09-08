@@ -37,7 +37,8 @@ if(isset($_SESSION['logged_in'])){
             <img class="logoCompleto" src="img/logoCompleto.png" alt="logo">
         </div>
         <img id="menuBtn" class="menuBtnHamburguer" src="https://pipartners.cl/wp-content/uploads/2021/07/menuH.png" alt="menu">
-<?php include('menu.php'); ?>
+        <!--Inclusión del menú-->
+        <?php include('menu.php'); ?>
     </header>
     <main role="main">
         <section class="nuevoReto">
