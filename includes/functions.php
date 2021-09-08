@@ -2,6 +2,7 @@
 session_start();
 include_once('conexion.php');
 
+
 if(isset($_POST['email'])){
     $email = $_POST['email'];
 }
@@ -10,15 +11,11 @@ if(isset($_POST['dni'])){
     $ind = md5($_POST['dni']);
 }
 
+
 function logout(){
     session_destroy();
     header('Location: ../index.php');
     //echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
-}
-
-
-if(isset($_GET['a'])){
-    logout();
 }
 
 
@@ -36,7 +33,7 @@ function recovery(){
     $mensaje .= " \r\n\r\n";
     $mensaje .= "Enviado el " . date('d/m/Y', time());
     
-    $asunto = "Recuperación de contraseña - Perderesmas.pe " 
+    $asunto = "Recuperación de contraseña - Perderesmas.pe ";
     mail($email, $asunto, utf8_decode($mensaje), $header);
     
     global $pdo;
@@ -45,6 +42,13 @@ function recovery(){
     $query->bindValue(2, $dni);
     $query->execute();
 }
+
+
+if(isset($_GET['a'])){
+    logout();
+}
+
+
 
 //if(isset($_GET['b'])){}
 
