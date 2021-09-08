@@ -55,7 +55,7 @@ class Usuario{
     
     public function brazo($a){
         global $pdo;
-        $query = $pdo->prepare("SELECT d.cintura FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query = $pdo->prepare("SELECT d.brazo FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
         return $query->fetch();
