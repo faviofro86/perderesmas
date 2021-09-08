@@ -1,16 +1,17 @@
 <?php
 
 include_once('conexion.php');
+$conex = new Conexion;
 
 class Usuario{
     
     public function datos($doc){
         global $pdo;
-        
+                
         $query = $pdo->prepare("SELECT * FROM registros WHERE dni = ?");
         $query->bindValue(1, $doc);
         $query->execute();
-        
+        //$pdo->closePDO();
         return $query->fetch();
     }
     
@@ -23,7 +24,9 @@ class Usuario{
     }
     
     public function grasa($a){
-        global $pdo;
+        //global $pdo;
+        
+        $pdo = $conex->initPDO();
         $query = $pdo->prepare("SELECT grasa FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
@@ -32,6 +35,7 @@ class Usuario{
         foreach($g as $ga){
             $grasa[]=$ga['grasa'];
         }
+        $pdo->closePDO();
         return $grasa;
     }
     
@@ -40,7 +44,8 @@ class Usuario{
         $query = $pdo->prepare("SELECT d.imc FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ? GROUP BY d.imc");
         $query->bindValue(1, $a);
         $query->execute();
-        return $query->fetch();
+        $i=$query->fetch();
+        return 
     }
     
     public function peso($a){

@@ -1,16 +1,16 @@
 <?php
+header('Content-Type: application/json; charset=utf-8');
 
 include_once('conexion.php');
 include_once('usuario.php');
 $dni=$_GET['dni'];
 
 $user = new Usuario;
-
+88
 $grasa = $user->grasa($dni);
 echo json_encode($grasa);
-echo var_dump($grasa);
 
-$imc = $user->imc($dni);
+/**$imc = $user->imc($dni);
 echo json_encode($imc);
 
 $peso = $user->peso($dni);
@@ -26,6 +26,6 @@ $valores = $user->valores($dni);
 echo json_encode($valores);
 
 $valoresd = $user->valoresd($dni);
-echo json_encode($valoresd);
+echo json_encode($valoresd);**/
 
 ?>
