@@ -42,10 +42,10 @@
                 <img class="logoLoginForm" src="img/logoperderEsMasWhite.png" alt="logo">
                 <form class="formLogin" action="includes/functions.php" method="post">
                     <label class="w-100" for="email">
-                        <input type="text" name="newpass" placeholder="Contraseña nueva" required>
+                        <input type="password" name="newpass" placeholder="Contraseña nueva" required>
                     </label>
                     <label class="w-100" for="dni">
-                        <input type="text" name="newpass2" placeholder="Confirmar contraseña" required>
+                        <input type="password" name="newpass2" placeholder="Confirmar contraseña" required>
                     </label>
                     <input type="hidden" name="ind2" value="<?php echo $_GET['c']; ?>">
 
