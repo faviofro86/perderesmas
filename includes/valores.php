@@ -8,6 +8,7 @@ $user = new Usuario;
 
 $grasa = $user->grasa($dni);
 echo json_encode($grasa);
+echo var_dump($grasa);
 
 $imc = $user->imc($dni);
 echo json_encode($imc);
