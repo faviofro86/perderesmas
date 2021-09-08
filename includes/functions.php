@@ -12,6 +12,7 @@ if(isset($_POST['dni'])){
 }
 
 
+
 function logout(){
     session_destroy();
     header('Location: ../index.php');
@@ -19,8 +20,8 @@ function logout(){
 }
 
 
-function recovery(){
-    $header = 'From: ' . 'noreply@somosucv.edu.pe' . " \r\n";
+function recovery($email, $dni, $ind){
+    $header = 'From: ' . 'noreply@perderesmas.pe' . " \r\n";
     $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
     $header .= "Mime-Version: 1.0 \r\n";
     $header .= "Content-Type: text/html; charset=utf-8";
@@ -46,6 +47,11 @@ function recovery(){
 
 if(isset($_GET['a'])){
     logout();
+}
+
+
+if(isset($_POST['email']) && isset($_POST['dni'])){
+    recovery($email, $dni, $ind);
 }
 
 

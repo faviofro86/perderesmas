@@ -1,33 +1,8 @@
 <?php
 session_start();
-
 include_once('includes/conexion.php');
-if (isset($_SESSION['logged_in'])) {
-    header('Location: home.php');
-} else {
-    if (isset($_POST['usuario'], $_POST['password'])) {
-        $usuario = $_POST['usuario'];
-        $password = md5($_POST['password']);
-        if (empty($usuario) or empty($password)) {
-            $error = "Ambos valores son requeridos";
-        } else {
-            $query = $pdo->prepare("SELECT * FROM registros WHERE email = ? AND password = ?");
-            $query->bindValue(1, $usuario);
-            $query->bindValue(2, $password);
-            $query->execute();
-            $datos = $query->fetch();
-            $num = $query->rowCount();
-            if ($num == 1) {
-                $_SESSION['logged_in'] = true;
-                $_SESSION['username'] = $datos['nombres'];
-                $_SESSION['doc'] = $datos['dni'];
-                header('Location: home.php');
-                exit();
-            } else {
-                $error = "Valores incorrectos";
-            }
-        }
-    }
+if(isset($_SESSION['logged_in'])){
+
 ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -62,7 +37,7 @@ if (isset($_SESSION['logged_in'])) {
         <main role="main">
             <section class="login">
                 <div class="containerLogin">
-                    <p class="white textCenter">Iniciar Sesión</p>
+                    <p class="white textCenter">Recuperar contraseña</p>
                     <!-- <p class="white textCenter">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin mi nulla,
                         feugiat id
                         tristique sit
@@ -71,28 +46,21 @@ if (isset($_SESSION['logged_in'])) {
                     </p> -->
                     <!--Comentario de prueba-->
                     <img class="logoLoginForm" src="img/logoperderEsMasWhite.png" alt="logo">
-                    <form class="formLogin" action="index.php" method="post">
+                    <form class="formLogin" action="functions.php" method="post">
                         <label class="w-100" for="email">
-                            <input type="email" name="usuario" placeholder="E-mail">
+                            <input type="email" name="email" placeholder="E-mail">
                         </label>
-                        <label class="w-100" for="password">
-                            <input type="password" name="password" placeholder="contraseña">
+                        <label class="w-100" for="dni">
+                            <input type="password" name="dni" placeholder="dni">
                         </label>
                         <div><small class="alertaLogin"></small>
-                            <?php if (isset($error)) { ?>
-                                <small class="alertaLogin"><?php echo $error; ?></small>
+                            <?php if (isset($mensaje)) { ?>
+                                <small class="alertaLogin"><?php echo $mensaje; ?></small>
                             <?php } ?>
                         </div>
 
-                        <div class="recuerdameContainer d-flex align-items-center justify-content-between">
-                            <label for="recordarme" class="recuerdame d-flex align-items-center">
-                                <input type="checkbox" name="recordarme">Recordarme
-                            </label>
 
-                            <a class="loginMiembro" href="recuperar.php" rel="noopener noreferrer"> ¿Olvidaste tu contraseña? </a> 
-                        </div>
-
-                        <input class="btnLogin white" type="submit" value="INICIO">
+                        <input class="btnLogin white" type="submit" value="RECUPERAR CONTRASEÑA">
                     </form>
                 </div>
             </section>
@@ -105,6 +73,6 @@ if (isset($_SESSION['logged_in'])) {
     </body>
 
     </html>
-<?php
-}
-?>
+<?php }else{
+    header('Location: index.php');
+}?>
