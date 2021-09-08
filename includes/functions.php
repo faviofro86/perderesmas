@@ -9,9 +9,4 @@ if (isset($_GET['a'])){
     header('Location: ../home.php');
 }
 
-function logout(){
-    session_destroy();
-    return header('Location: ../index.php');
-}
-
 ?>
