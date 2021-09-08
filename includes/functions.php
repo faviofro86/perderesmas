@@ -9,9 +9,10 @@ if(isset($_GET['a'])){
     logout();
 }
 
-public function logout(){
+function logout(){
     session_destroy();
-    header('Location: ../index.php');//echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
+    //header('Location: ../index.php');
+    echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
 
