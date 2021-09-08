@@ -6,7 +6,7 @@ $dni = $_POST['dni'];
 
 if(isset($_GET['a'])){
     session_destroy();
-    echo "<meta http-equiv='refresh' content='1;URL=index.php'>";
+    echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
 
