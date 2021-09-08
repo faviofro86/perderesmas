@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once('conexion.php');
+include_once('usuario.php');
 
 
 if(isset($_POST['email'])){
@@ -8,6 +9,8 @@ if(isset($_POST['email'])){
 }
 if(isset($_POST['dni'])){
     $dni = $_POST['dni'];
+    $user = new Usuario;
+    $id = $user->iddni($dni);
     $ind = ((($dni + 1)*3)+3);
 }
 
@@ -18,6 +21,9 @@ function logout(){
     header('Location: ../index.php');
     //echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
+
+
+
 
 
 function recovery($a, $b, $c){
@@ -48,7 +54,7 @@ function recovery($a, $b, $c){
 
 function restablecer($a, $b){
     global $pdo;
-    $query = $pdo->prepare("UPDATE `registros` SET `recovery`= 0, `password`= ? WHERE `dni` = ? AND `recovery` = 1");
+    $query = $pdo->prepare("UPDATE `registros` SET `recovery`= 0, `password`= ? WHERE `id` = ? AND `recovery` = 1");
     $query->bindValue(1, $a);
     $query->bindValue(2, $b);
     $query->execute();
@@ -62,7 +68,7 @@ if(isset($_GET['a'])){
 
 
 if(isset($_POST['email']) && isset($_POST['dni'])){
-    recovery($email, $dni, $ind);
+    recovery($email, $dni, $id);
 }
 
 
@@ -74,9 +80,9 @@ if(isset($_GET['c'])){
 
 if(isset($_POST['newpass'])){
     $newpass = md5($_POST['newpass']);
-    $ind2 = $_POST['ind2'];
+    $id2 = $_POST['ind2'];
     $dni2 = ((($ind2 - 3)/3)-1);
-    restablecer($newpass, $dni2);
+    restablecer($newpass, $id2);
 }
 
 

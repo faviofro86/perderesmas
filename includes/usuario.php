@@ -12,6 +12,14 @@ class Usuario{
         return $query->fetch();
     }
     
+    public function iddni($a){
+        global $pdo;
+        $query = $pdo->prepare("SELECT id FROM registros WHERE dni = ?");
+        $query->bindValue(1, $a);
+        $query->execute();
+        return $query->fetch();
+    }
+    
 }
 
 ?>
