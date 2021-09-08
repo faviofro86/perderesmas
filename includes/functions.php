@@ -16,6 +16,12 @@ function logout(){
     //echo "<meta http-equiv='refresh' content='1;URL=../index.php'>";
 }
 
+
+if(isset($_GET['a'])){
+    logout();
+}
+
+
 function recovery(){
     $header = 'From: ' . 'noreply@somosucv.edu.pe' . " \r\n";
     $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
@@ -39,11 +45,6 @@ function recovery(){
     $query->bindValue(2, $dni);
     $query->execute();
 }
-
-if(isset($_GET['a'])){
-    logout();
-}
-
 
 //if(isset($_GET['b'])){}
 
