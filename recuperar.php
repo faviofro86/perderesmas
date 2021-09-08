@@ -48,7 +48,7 @@
                         <input type="text" name="dni" placeholder="DNI">
                     </label>
                     <div><small class="alertaLogin"></small>
-                        <?php if (isset($ok)) { ?>
+                        <?php if (isset($_GET['ok'])) { ?>
                             <small class="alertaLogin"><?php echo "Correo de recuperación enviado"; ?></small>
                         <?php } ?>
                     </div>
