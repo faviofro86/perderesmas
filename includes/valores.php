@@ -2,22 +2,23 @@
 
 include_once('conexion.php');
 include_once('usuarios.php');
+$dni=$_GET['dni'];
 
 $user = new Usuario;
 
-$grasa = $user->grasa($_SESSION['doc']);
+$grasa = $user->grasa($dni);
 echo json_encode($grasa);
 
-$imc = $user->imc($_SESSION['doc']);
+$imc = $user->imc($dni);
 echo json_encode($imc);
 
-$peso = $user->peso($_SESSION['doc']);
+$peso = $user->peso($dni);
 echo json_encode($peso);
 
-$cintura = $user->cintura($_SESSION['doc']);
+$cintura = $user->cintura($dni);
 echo json_encode($cintura);
 
-$brazo = $user->brazo($_SESSION['doc']);
+$brazo = $user->brazo($dni);
 echo json_encode($brazo);
 
 ?>
