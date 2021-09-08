@@ -1,6 +1,7 @@
 <?php
 include_once('includes/nutri.php');
 $nutri = new Nutricionista;
+$doc = $_SESSION['doc'];
 $contacto = $nutri->datos($doc);
 $wasap="https://api.whatsapp.com/send/?phone=51".$contacto['telefono'];
 ?>
