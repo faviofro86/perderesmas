@@ -75,7 +75,8 @@ if(isset($_GET['c'])){
 if(isset($_POST['newpass'])){
     $newpass = $_POST['newpass'];
     $ind2 = $_POST['ind2'];
-    restablecer($newpass, $ind2);
+    $dni2 = ((($ind2 - 3)/3)-1);
+    restablecer($newpass, $dni2);
 }
 
 
