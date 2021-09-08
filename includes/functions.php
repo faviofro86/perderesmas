@@ -7,7 +7,7 @@ if (isset($_GET['a'])){
 function logout($res){
     session_start();
     session_destroy();
-    return header('Location: index.php');
+    return header('Location: ../index.php');
 }
 
 ?>
