@@ -31,7 +31,7 @@ class Usuario{
     
     public function imc($a){
         global $pdo;
-        $query = $pdo->prepare("SELECT d.imc FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ?");
+        $query = $pdo->prepare("SELECT d.imc FROM datos d JOIN registros r ON r.dni = d.dni WHERE r.dni = ? GROUP BY d.imc");
         $query->bindValue(1, $a);
         $query->execute();
         return $query->fetch();
