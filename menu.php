@@ -16,7 +16,7 @@ $email="mailto:".$contacto['email'];
                     <li class="menu__li"><a class="menu__a premios" href="premios.php" rel="noopener noreferrer">Premios</a></li>
                     <li class="menu__li bordesLaterales"><a class="menu__a menuTycColor" href="terminos_y_condiciones.php" rel="noopener noreferrer">T y C</a></li>
                     <li class="menu__li perfil"><a class="menu__a" href="perfil.php" rel="noopener noreferrer">Perfil</a></li>
-                    <li class="menu__li"><a class="menu__a" href="functions.php?a=a" rel="noopener noreferrer">Salir</a></li>
+                    <li class="menu__li"><a class="menu__a" href="includes/functions.php?a=a" rel="noopener noreferrer">Salir</a></li>
                 </ul>
             </nav>
             <div class="socialMedia d-flex align-items-center">
