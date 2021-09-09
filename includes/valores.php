@@ -6,7 +6,7 @@ include_once('usuario.php');
 $dni=$_GET['dni'];
 
 $user = new Usuario;
-88
+
 $grasa = $user->grasa($dni);
 echo json_encode($grasa);
 
