@@ -5,7 +5,7 @@ class Conexion{
     
     function initPDO(){ 
         try{
-            $this->pdo = new PDO('mysql:host=localhost;dbname=perderesmas', 'perderesmas', 'y%bp=N+50$D9',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+            $this->pdo = new PDO('mysql:host=perderesmas.pe;dbname=perderesmas_gloria', 'perderesmas', 'y%bp=N+50$D9',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
         }
         catch(PDOException $e){
             exit('Database Error' . $e);
@@ -21,7 +21,7 @@ class Conexion{
 
 
 try{
-    $pdo = new PDO('mysql:host=localhost;dbname=perderesmas', 'perderesmas', 'y%bp=N+50$D9',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $pdo = new PDO('mysql:host=perderesmas.pe;dbname=perderesmas_gloria', 'perderesmas', 'y%bp=N+50$D9',array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 }catch(PDOException $e){
     exit('Database Error' . $e);
 }
