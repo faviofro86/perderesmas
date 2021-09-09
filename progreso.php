@@ -53,7 +53,7 @@ if(isset($_SESSION['logged_in'])){
         <!-- 1 grafica  -->
         <section class="grasaCorporalContainer">
             <p class="tituloGrasaCorporal textCenter">% DE GRASA CORPORAL</p>
-            <canvas id="myChartGrasaCorporal" style="width: 75vw; height: 60vh; margin: auto;"></canvas>
+            <!-- <canvas id="myChartGrasaCorporal" style="width: 75vw; height: 60vh; margin: auto;"></canvas> -->
             <img class="personRunning" src="img/ilustracion_2.png" alt="personRunning">
         </section>
 
