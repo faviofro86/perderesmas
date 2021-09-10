@@ -6,9 +6,9 @@
                         <a href="listar.php" class="logo">
                             <img src="assets/images/logoGloria.png" alt="Gloria" />
                         </a>
-                        <button class="menu-toggler arrow">
+                        <!-- <button class="menu-toggler arrow">
                             <i class="fas fa-chevron-right"></i>
-                        </button>
+                        </button> -->
                         <!-- <a href="#" class="menu-toggler">
                         <i class="ti-menu"></i>
                         </a> -->
