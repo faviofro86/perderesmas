@@ -24,7 +24,7 @@ if (isset($_SESSION['logged_in'])) {
 
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                <div class="card products mixFilterable">
+                <div class="card mixFilterable">
                     <div class="card-body table-responsive custom-datatable">
                         <table class="table sorting-datatable display" id="example" style="width: 100%;">
                             <!-- <thead>
