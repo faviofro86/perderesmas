@@ -19,11 +19,7 @@ if (isset($_SESSION['logged_in'])) {
         <!-- <div class="container"> -->
 
         <div class="custom-breadcrumb">
-            <?php foreach ($lista as $uno) { ?>
-                <h3><?php echo $uno['nombres'];
-                    $apellidos = $uno['appaterno'] . ' ' . $uno['apmaterno'];
-                    echo $apellidos;  ?></h3>
-            <?php } ?>
+                <h3>{Nombre y apellidos}</h3>
         </div>
 
         <div class="row">
