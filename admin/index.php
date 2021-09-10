@@ -45,20 +45,20 @@ if(isset($_SESSION['logged_in'])){
 
 <body>
     <div class="container-fluid">
-        <div class="container">
+        <div class="container my-5">
 
 
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 text-center">
                     <img src="../img/logoGloria.png" alt="" class="img-fluid" style="max-height: 70px">
                 </div>
-                <div class="col-6 text-right">
+                <div class="col-6 text-center">
                     <img src="../img/logoCompleto.png" alt="" class="img-fluid" style="max-height: 70px">
                 </div>
             </div>
 
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 col-lg-6 mt-5 offset-lg-3 p-4 border bg-light shadow">
                     <?php if(isset($error)){?>
                     <small><?php echo $error; ?></small>
                     <?php } ?>
