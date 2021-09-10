@@ -14,22 +14,22 @@
             CKEDITOR.inline( 'proceso' );
         </script>
         <!-- JS -->
-        <script src="../assets/js/jquery-3.4.1.min.js"></script>
-        <script src="../assets/js/jquery-ui.min.js"></script>
-        <script src="../assets/js/popper.js"></script>
-        <script src="../assets/js/bootstrap.min.js"></script>
-        <script src="../assets/js/apexcharts.min.js"></script>
-        <script src="../assets/js/ckeditor.js"></script>
-        <script src="../assets/js/datatables.min.js"></script>
-        <script src="../assets/js/moment.min.js"></script>
-        <script src="../assets/js/daterangepicker.js"></script>
-        <script src="../assets/js/jquery.nice-select.min.js"></script>
-        <script src="../assets/js/mixitup.min.js"></script>
-        <script src="../assets/js/tagify.min.js"></script>
-        <script src="../assets/js/owl.carousel.min.js"></script>
-        <script src="../assets/js/perfect-scrollbar.min.js"></script>
-        <script src="../assets/js/chart-options.js"></script>
-        <script src="../assets/js/scripts.js"></script>
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/jquery-ui.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/apexcharts.min.js"></script>
+        <script src="assets/js/ckeditor.js"></script>
+        <script src="assets/js/datatables.min.js"></script>
+        <script src="assets/js/moment.min.js"></script>
+        <script src="assets/js/daterangepicker.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/mixitup.min.js"></script>
+        <script src="assets/js/tagify.min.js"></script>
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <script src="assets/js/perfect-scrollbar.min.js"></script>
+        <script src="assets/js/chart-options.js"></script>
+        <script src="assets/js/scripts.js"></script>
 
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
