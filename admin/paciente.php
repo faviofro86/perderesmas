@@ -127,7 +127,7 @@ if (isset($_SESSION['logged_in'])) {
                                 <?php } ?>
                             </tbody>
                         </table>
-                        <div>
+                        <div class="mt-5">
                             <a class="btn btn-primary btn-lg" href="registrar.php?dni=<?php echo $data['dni']; ?>">Registrar</a>
                         </div>
                     </div>

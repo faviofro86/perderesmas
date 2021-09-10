@@ -62,8 +62,7 @@ if (isset($_SESSION['logged_in'])) {
                                             <input type="date" name="fecha" value="2021-09-01" min="2021-08-01" max="2021-12-31">
                                         </div>
                                         <input type="hidden" name="dni" value="<?php echo $id;?>">
-                                        <div class="separator-bordered" style="margin: 70px 0;"></div>
-                                        <button type="submit" class="btn btn-primary btn-lg">Registrar</button>
+                                        <button type="submit" class="btn btn-primary btn-lg mt-4">Registrar</button>
                                     </form>
                                 </div>
                         </div>
