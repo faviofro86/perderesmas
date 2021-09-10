@@ -50,7 +50,7 @@ $lista = $user->fetch_todos($id);
                                                         <a class="edit" href="#" id="">Editar</a>
                                                     </div>
                                                 </td>
-                                                <td style="text-transform: capitalize;"><?php echo $uno['nombres']; ?></td>
+                                                <td><?php echo $uno['nombres']; ?></td>
                                                 <td><?php $apellidos = $uno['appaterno'].' '.$uno['apmaterno']; echo $apellidos; ?></td>
                                             </tr>
                                             <?php } ?>
