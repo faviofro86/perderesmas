@@ -63,31 +63,48 @@ if (isset($_SESSION['logged_in'])) {
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        PESO: <input type="text" name="peso">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="peso">PESO:</span>
+                                            <input type="text" class="form-control" placeholder="Peso" aria-label="Peso" aria-describedby="peso-paciente">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        GRASA: <input type="text" name="grasa">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="grasa">GRASA:</span>
+                                            <input type="text" class="form-control" placeholder="grasa" aria-label="grasa" aria-describedby="grasa-paciente">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        IMC: <input type="text" name="imc">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="imc">IMC:</span>
+                                            <input type="text" class="form-control" placeholder="imc" aria-label="imc" aria-describedby="imc-paciente">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        CIRCUNFERENCIA CINTURA: <input type="text" name="circunferenciaCintura">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="circuferenciaCintura">circuferencia Cintura:</span>
+                                            <input type="text" class="form-control" placeholder="circuferenciaCintura" aria-label="circuferenciaCintura" aria-describedby="circuferenciaCintura-paciente">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        CIRCUNFERENCIA BRAZO: <input type="text" name="circuferenciaBrazo">
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text" id="circuferenciaBrazo">circuferencia Brazo:</span>
+                                            <input type="text" class="form-control" placeholder="circuferenciaBrazo" aria-label="circuferenciaBrazo" aria-describedby="circuferenciaBrazo-paciente">
+                                        </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <button type="button" class="btn btn-success">Guardar</button>
+                                    <td>
+                                        <button type="button" class="btn btn-success btn-lg">Guardar</button>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
