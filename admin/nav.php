@@ -3,8 +3,8 @@
                 <div class="container-fluid">
 
                     <div class="d-flex align-items-center">
-                        <a href="../area/listarareas.php" class="logo">
-                            <img src="../assets/images/logo-ucv.svg" alt="UCV" />
+                        <a href="listar.php" class="logo">
+                            <img src="assets/images/logo-ucv.svg" alt="UCV" />
                         </a>
                         <button class="menu-toggler arrow">
                             <i class="fas fa-chevron-right"></i>
@@ -28,7 +28,7 @@
                             <li class="nav-item nav-profile">
                                 <a class="user-profile" href="#" role="button" id="profiletab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <figure class="avatar-circle-sm">
-                                        <img src="../assets/images/avatar.jpg" alt="">
+                                        <img src="assets/images/avatar.jpg" alt="">
                                         <span class="presence-indicator online"></span>
                                     </figure>
                                     <strong class="user-name"><?php echo $_SESSION['nombres']; ?> <i class="fas fa-angle-down"></i></strong>

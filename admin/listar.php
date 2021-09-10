@@ -11,8 +11,8 @@ $lista = $user->fetch_todos($id);
 
 ?>
 <!doctype html>
-    <?php include_once('../head.php');?>
-    <?php include_once('../nav.php');?>
+    <?php include_once('head.php');?>
+    <?php include_once('nav.php');?>
                 
                 
                 <div class="page-container no-right-sidebar">
