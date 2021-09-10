@@ -20,7 +20,7 @@ if (isset($_SESSION['logged_in'])) {
         <!-- <div class="container"> -->
 
         <div class="custom-breadcrumb">
-            <h3><?php $data['nombres'] . ' ' . $data['appaternos'] . ' ' . $data['apmaterno'];?></h3>
+            <h3><?php echo $data['nombres'] . ' ' . $data['appaternos'] . ' ' . $data['apmaterno'];?></h3>
         </div>
 
         <div class="row">
@@ -31,32 +31,32 @@ if (isset($_SESSION['logged_in'])) {
                             <tbody>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>DNI: <?php $data['dni']; ?></p>
+                                        <p>DNI: <?php echo $data['dni']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>CORREO: <?php $data['email']; ?></p>
+                                        <p>CORREO: <?php echo $data['email']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>EDAD: <?php $data['edad']; ?></p>
+                                        <p>EDAD: <?php echo $data['edad']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>ÁREA: <?php $data['area']; ?></p>
+                                        <p>ÁREA: <?php echo $data['area']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>CARGO: <?php $data['cargo']; ?></p>
+                                        <p>CARGO: <?php echo $data['cargo']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>EMPRESA: <?php $data['empresa']; ?></p>
+                                        <p>EMPRESA: <?php echo $data['empresa']; ?></p>
                                     </td>
                                 </tr>
                             </tbody>
