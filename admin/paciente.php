@@ -7,7 +7,6 @@ if (isset($_SESSION['logged_in'])) {
     $user = new Usuario;
     $conex = new Conexion;
     $id = $_GET['dni'];
-    $lista = $user->fetch_todos($id);
     $data = $user->datos($id);
     $valores = $user->valoresd($id);
 
