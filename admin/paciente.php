@@ -66,6 +66,29 @@ if (isset($_SESSION['logged_in'])) {
                                         PESO: <input type="text" name="peso">
                                     </td>
                                 </tr>
+                                <tr class="has-actions-hidden mix delivered">
+                                    <td>
+                                        GRASA: <input type="text" name="grasa">
+                                    </td>
+                                </tr>
+                                <tr class="has-actions-hidden mix delivered">
+                                    <td>
+                                        IMC: <input type="text" name="imc">
+                                    </td>
+                                </tr>
+                                <tr class="has-actions-hidden mix delivered">
+                                    <td>
+                                        CIRCUNFERENCIA CINTURA: <input type="text" name="circunferenciaCintura">
+                                    </td>
+                                </tr>
+                                <tr class="has-actions-hidden mix delivered">
+                                    <td>
+                                        CIRCUNFERENCIA BRAZO: <input type="text" name="circuferenciaBrazo">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <button type="button" class="btn btn-success">Guardar</button>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
