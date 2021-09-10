@@ -12,12 +12,12 @@
                         <!-- <a href="#" class="menu-toggler">
                         <i class="ti-menu"></i>
                         </a> -->
-                        <div class="header-search d-none d-md-block">
+                        <!-- <div class="header-search d-none d-md-block">
                             <form action="#" class="search-form">
                                 <input type="search" name="search" placeholder="Buscar aquí...">
                                 <button><i class="ti-search"></i></button>
                             </form>
-                        </div>
+                        </div> -->
 
                         <ul class="navbar-nav utility-nav ml-auto">
                             <li class="nav-item expand-screen">
@@ -28,18 +28,18 @@
                             <li class="nav-item nav-profile">
                                 <a class="user-profile" href="#" role="button" id="profiletab" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <figure class="avatar-circle-sm">
-                                        <img src="assets/images/avatar.jpg" alt="">
+                                        <img src="assets/images/avatar.png" alt="">
                                         <span class="presence-indicator online"></span>
                                     </figure>
                                     <strong class="user-name"><?php echo $_SESSION['nombres']; ?> <i class="fas fa-angle-down"></i></strong>
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="profiletab">
-                                    <a href="#">
+                                    <!-- <a href="#">
                                         <i class="far fa-user"></i>
                                         <div class="text">
                                             <p>Perfil</p>
                                         </div>
-                                    </a>
+                                    </a> -->
                                     <a href="#">
                                         <i class="far fa-edit"></i>
                                         <div class="text">
@@ -71,7 +71,7 @@
                             </a>
                             <ul class="sub-menu">
                                 <li><a href="listar.php">Listar</a></li>
-                                <li><a href="agregar.php">Agregar datos</a></li>
+                                <!-- <li><a href="agregar.php">Agregar datos</a></li> -->
                             </ul>
                         </li>
                     </ul>

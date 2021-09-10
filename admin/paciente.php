@@ -31,32 +31,32 @@ if (isset($_SESSION['logged_in'])) {
                             <tbody>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>DNI: <?php echo $data['dni']; ?></p>
+                                        <p class="m-0">DNI: <?php echo $data['dni']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>CORREO: <?php echo $data['email']; ?></p>
+                                        <p class="m-0">CORREO: <?php echo $data['email']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>EDAD: <?php echo $data['edad']; ?></p>
+                                        <p class="m-0">EDAD: <?php echo $data['edad']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>ÁREA: <?php echo $data['area']; ?></p>
+                                        <p class="m-0">ÁREA: <?php echo $data['area']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>CARGO: <?php echo $data['cargo']; ?></p>
+                                        <p class="m-0">CARGO: <?php echo $data['cargo']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                        <p>EMPRESA: <?php echo $data['empresa']; ?></p>
+                                        <p class="m-0">EMPRESA: <?php echo $data['empresa']; ?></p>
                                     </td>
                                 </tr>
                             </tbody>
