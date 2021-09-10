@@ -11,18 +11,18 @@
         <title>Editar Guía</title>
         
         <!-- All CSS -->
-        <link rel="stylesheet" href="../assets/css/fontawesome.css">
-        <link rel="stylesheet" href="../assets/css/themify-icons.css">
-        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../assets/css/dataTables.bootstrap4.min.css">
-        <link rel="stylesheet" href="../assets/css/daterangepicker.css">
-        <link rel="stylesheet" href="../assets/css/nice-select.css">
-        <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
-        <link rel="stylesheet" href="../assets/css/apexcharts.css">
-        <link rel="stylesheet" href="../assets/css/perfect-scrollbar.css">
-        <link rel="stylesheet" href="../assets/css/tagify.css">
-        <link rel="stylesheet" href="../assets/css/style.css">
-        <link rel="stylesheet" href="../assets/css/custom.css">
+        <link rel="stylesheet" href="assets/css/fontawesome.css">
+        <link rel="stylesheet" href="assets/css/themify-icons.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" href="assets/css/daterangepicker.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/apexcharts.css">
+        <link rel="stylesheet" href="assets/css/perfect-scrollbar.css">
+        <link rel="stylesheet" href="assets/css/tagify.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <style>
             .edicion{
                 border:1px solid #dee1e5;padding:20px;
