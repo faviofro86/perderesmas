@@ -19,7 +19,7 @@ if (isset($_SESSION['logged_in'])) {
         <!-- <div class="container"> -->
 
         <div class="custom-breadcrumb">
-                <h3>{Nombre y apellidos}</h3>
+            <h3>{Nombre y apellidos}</h3>
         </div>
 
         <div class="row">
@@ -63,15 +63,7 @@ if (isset($_SESSION['logged_in'])) {
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
-                                    PESO:
-                                    </td>
-                                    <td>
-                                        <div class="heading">
-                                            <input type="text" name="peso">
-                                        </div>
-                                        <div class="actions-row">
-                                            <a class="edit" href="#" id="">Editar</a>
-                                        </div>
+                                        PESO: <input type="text" name="peso">
                                     </td>
                                 </tr>
                             </tbody>
