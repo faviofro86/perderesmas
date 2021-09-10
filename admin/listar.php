@@ -47,11 +47,11 @@ $lista = $user->fetch_todos($id);
                                                     <?php echo $uno['dni']; ?>
                                                     </div>
                                                     <div class="actions-row">
-                                                        <a class="edit" href="#" id="">Editar</a>
+                                                        <a class="edit" href="paciente.php?dni=<?php echo $uno['id']; ?>" id="">Editar</a>
                                                     </div>
                                                 </td>
                                                 <td style="text-transform: uppercase;"><?php echo $uno['nombres']; ?></td>
-                                                <td style="text-transform: uppercase;"><?php $apellidos = $uno['appaterno'].' '.$uno['apmaterno']; echo $apellidos; ?></td>
+                                                <td style="text-transform: uppercase; text-align: left;"><?php $apellidos = $uno['appaterno'].' '.$uno['apmaterno']; echo $apellidos; ?></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>
