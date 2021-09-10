@@ -121,7 +121,7 @@ $lista = $user->fetch_todos($id);
             </main>
         </div>
 
-    <?php include_once('../footer.php');?>
+    <?php include_once('footer.php');?>
    <?php }else{
-    header('Location: ../index.php');
+    header('Location: index.php');
 }?>
