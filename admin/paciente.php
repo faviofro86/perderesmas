@@ -20,7 +20,7 @@ if (isset($_SESSION['logged_in'])) {
         <!-- <div class="container"> -->
 
         <div class="custom-breadcrumb">
-            <h3>{Nombre y apellidos}</h3>
+            <h3><?php $data['nombres'] . ' ' . $data['appaternos'] . ' ' . $data['apmaterno'];?></h3>
         </div>
 
         <div class="row">
@@ -32,21 +32,6 @@ if (isset($_SESSION['logged_in'])) {
                                 <tr class="has-actions-hidden mix delivered">
                                     <td>
                                         <p>DNI: <?php $data['dni']; ?></p>
-                                    </td>
-                                </tr>
-                                <tr class="has-actions-hidden mix delivered">
-                                    <td>
-                                        <p>NOMBRES: <?php $data['nombres']; ?></p>
-                                    </td>
-                                </tr>
-                                <tr class="has-actions-hidden mix delivered">
-                                    <td>
-                                        <p>APELLIDO PATERNO: <?php $data['appaterno']; ?></p>
-                                    </td>
-                                </tr>
-                                <tr class="has-actions-hidden mix delivered">
-                                    <td>
-                                        <p>APELLIDO MATERNO: <?php $data['apmaterno']; ?></p>
                                     </td>
                                 </tr>
                                 <tr class="has-actions-hidden mix delivered">
