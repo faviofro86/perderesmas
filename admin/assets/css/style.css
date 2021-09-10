@@ -106,9 +106,9 @@ section {
   border: none;
 }
 
-.theme-light .btn:not(.bs-btn) {
+/* .theme-light .btn:not(.bs-btn) {
   color: #4b5b6b;
-}
+} */
 
 .theme-dark .btn:not(.bs-btn) {
   color: #fff;
@@ -471,10 +471,6 @@ section {
 
 .table:not(.table-list):not(.table.table-list-separated) tr:first-child td {
   border-top: none;
-}
-
-.table:not(.table-list):not(.table.table-list-separated) tr:last-child td {
-  padding-bottom: 0;
 }
 
 .table:not(.table-list):not(.table.table-list-separated) tr th:first-child, .table:not(.table-list):not(.table.table-list-separated) tr td:first-child {
