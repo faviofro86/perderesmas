@@ -1,0 +1,33 @@
+$themes: (
+    'light': (
+        bg-color: #eff1f5,
+        panel-bg: #fff,
+        primary: #4b5b6b,
+        secondary: #3d4859,
+        color-gray: #7d7d7d,
+        menu-color: #4b5b6b,
+        color-lightgray: #dee1e5,
+        color-offwhite: #eff1f5,
+        shadow:rgba(126, 142, 177, 0.2),
+        borderColor: #b7bcc3,
+    ),
+    'dark': (
+        bg-color: #182037,
+        panel-bg: #222a43,
+        primary: #fff,
+        secondary: #f1f1f1,
+        color-gray: #646a84,
+        menu-color: #646a84,
+        color-lightgray: #3d4859,
+        color-offwhite: #1b1b1b,
+        shadow: rgba(0, 0, 0, 0.2),
+        borderColor: #3d4859,
+    )
+)
+
+/**********
+ ** Uses
+@include themify($themes) {
+    propnname: themed('variable');  
+}
+**/

@@ -115,6 +115,17 @@ class Usuario{
         return $query->fetchAll();
     }
     
+    public function fetch_todos($i){
+        $conex = new Conexion();
+        $pdo = $conex->initPDO();
+        $query = $pdo->prepare("SELECT dni, id, nombres, appaterno, apmaterno FROM registros WHERE nutricionista = ?");
+        $query->bindValue(1, $i);
+        $query->execute();
+        $b=$query->fetchAll();
+        $conex->closePDO();
+        return $b;
+    }
+    
 }
 
 ?>

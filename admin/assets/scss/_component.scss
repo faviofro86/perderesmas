@@ -1,0 +1,638 @@
+
+// Button
+.btn {
+    // @include themify($themes) {
+    //     color: themed('primary');
+    // }
+    &:not(.bs-btn) {
+        @include themify($themes) {
+            color: themed('primary');
+        }
+        border: none;
+    }
+    // color: $color-primary;
+    display: inline-block;
+    font-size: 1.4rem;
+
+    &:hover, &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+
+    &-gradient {
+        @include gradient-btn;
+        background-size: 200% 100%;
+        color: $color-white !important;
+        transition: $transition;
+
+        &:hover {
+            color: $color-white;
+            background-position: 100% 0;
+        }
+    }
+
+    &-filled {
+        @extend .btn-gradient;
+        color: $color-white !important;
+        padding: 1.5rem 2rem;
+
+        &-red {
+            @extend .btn-filled;
+            background: $gradient-red !important;
+        }
+
+        &-blue {
+            @extend .btn-filled;
+            background: $gradient-blue !important;
+        }
+
+        &-purple {
+            @extend .btn-filled;
+            background: $gradient-purple !important;
+        }
+    }
+
+    &-outline {
+        border: inherit; 
+        
+        &, &-red, &-blue, &-purple {
+            padding: 1rem 2rem;
+            border: 1px solid $color-gray !important;
+
+            &:hover {
+                // color: $color-primary !important;
+            }
+        }
+
+        &-red {
+            border-color: $color-red !important;
+        }
+
+        &-blue {
+            border-color: $color-blue !important;
+        }
+
+        &-purple {
+            border-color: $color-purple !important;
+        }
+    }
+
+    &.bs-btn {
+        // border: initial !important;
+        padding: .75rem 2.5rem;
+
+        i {
+            vertical-align: middle;
+        }
+    }
+
+    &-xl {
+        padding: 1rem 2.75rem !important;
+        font-size: 1.6rem;
+    }
+    &-lg {
+        padding: .75rem 2.5rem !important;
+        font-size: 1.5rem;
+    }
+    &-md {
+        padding: .5rem 2rem !important;
+        font-size: 1.3rem;
+    }
+    &-sm {
+        padding: .4rem 1.75rem !important;
+        font-size: 1.2rem;
+    }
+}
+
+// Action buttons
+.actions {
+    a {
+        @include themify($themes) {
+            color: themed('color-gray'); 
+        }
+        
+        display: inline-block;
+        font-size: 1.4rem;
+
+        &:not(:first-child){
+            margin-left: 10px;
+        }
+
+        i {
+            margin-right: 5px;
+        }
+    }
+}
+
+// List 
+.list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li { 
+        display: block;
+        padding: 1.5rem 0;
+        width: 100%;
+
+        a {
+            @include themify($themes) {
+                color: themed('secondary');  
+            }
+            color: $color-secondary;
+            display: block;           
+            font-size: 1.5rem;
+            font-weight: $font-medium;
+            text-transform: capitalize;
+
+            span {
+                @include themify($themes) {
+                    color: themed('color-gray');  
+                }
+                // color: $color-gray;
+                font-size: 1.2rem;
+                font-weight: $font-regular;
+                line-height: 1.4rem;
+                display: block;
+                transition: $transition;
+            }
+
+            &:hover {
+                color: $color-red;
+
+                span {
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+}
+
+// Avatar List 
+.avatar-list {
+    li {
+        a {
+            @include flexbox(center, start);
+        }
+
+        .avatar {
+            @include avatar(5rem)
+        }
+
+        .text {
+            margin-left: 2.5rem;
+            flex-basis: calc(100% - (5rem + 2.5rem) );
+        }
+    }
+}
+
+/**
+* Card
+*/
+
+
+.card {
+    @include themify($themes) {
+        background-color: themed('panel-bg');  
+        box-shadow: 0 5px 12px themed('shadow');
+    }
+    border: none;
+    border-radius: 0;
+    // box-shadow: 0 5px 12px rgba(126, 142, 177, 0.2);
+    padding: 3rem;
+    position: relative;
+    margin-bottom: 30px;
+
+    @include respond(min-lg) {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    @include respond(tab-port) {
+        padding: 2.5rem 2rem 2rem;
+    }
+    
+
+    &-title {
+        @include themify($themes) {
+            color: themed('secondary');  
+        }
+        font-size: 1.8rem;
+        font-weight: 500;
+        // line-height: .8;
+        margin-bottom: 0;
+
+        @include respond(phone) {
+            // margin-bottom: .5rem
+        }
+    }
+
+    &-header {
+        border: none;
+        background-color: transparent;
+        padding: 0; 
+
+        @include respond(tab-port) {
+            margin-bottom: 1.5rem
+        }
+        
+        span {
+            @include themify($themes) {
+               color: themed('color-gray');  
+            }
+            // color: $color-gray;
+            font-size: 1.4rem;
+            line-height: 1.4;
+            // line-height: .8;
+            text-transform: capitalize;
+            margin-top: 1rem;
+            display: block;
+
+            @include respond(phone) {
+                margin-top: .5rem;
+            }
+        }
+    }
+
+    &-body {
+        padding: 0;  
+        position: relative;
+    }
+
+    &-stretch {
+        @include flexbox(stretch, stretch);
+        height: calc(100% - 3rem);
+    }
+
+    &-bordered {
+        background-color: transparent !important;
+        border: 1px solid rgba($color-gray, .3);
+        border-radius: 5px;
+    }
+
+    &-list {
+        border: 1px solid rgba($color-gray, .3);
+        padding: 0;
+
+        &-header {
+            padding: .75rem 1.25rem;
+        }
+    }
+
+    &-styled {
+        border-radius: 5px;
+        .card-title {
+            margin-bottom: 1.5rem;
+            color: $color-white;
+        }
+        .card-header {
+            padding: 1rem 2rem;
+            margin-bottom: 0;
+            background-color: rgba(0,0,0,.03);
+            border-bottom: 1px solid rgba(0,0,0,.125);
+        }
+        .card-body {
+            padding: 1rem 2rem;
+        }
+
+        &.bg-primary {
+            background-color: $color-blue !important;
+        }
+        &.bg-secondary {
+            background-color: $color-orange!important;
+        }
+        &.bg-success {
+            background-color: $color-blue-light-1 !important;
+        }
+        &.bg-danger {
+            background-color: $color-red !important;
+        }
+    }
+}
+
+/**
+* Table
+*/
+.table {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 0;
+
+    &:not(.table-list) {
+        tr {
+            &:first-child {
+                td {
+                    border-top: none;
+                }
+            }
+            &:last-child {
+                td {
+                    padding-bottom: 0;
+                }
+            }
+
+            th, td {
+                &:first-child {
+                    padding-left: 0;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+
+    tr {
+
+        th, td {
+            @include themify($themes) {
+                color: themed('color-gray'); 
+                border-color: themed('color-lightgray') !important; 
+            }
+            font-size: 1.4rem;
+            line-height: 2.3rem;
+            padding: 2rem 1rem;
+            vertical-align: middle;
+            white-space: nowrap;
+
+            .avatar {
+                @include avatar(6.5rem, true);
+            }
+
+            i {
+                vertical-align: inherit;
+                margin-right: 8px;
+            }
+
+            .flag {
+                width: 25px;
+                display: inline-block;
+                margin-left: 5px;
+            }
+        }
+
+        th {
+            @include themify($themes) {
+                color: themed('primary') !important;  
+            }
+            font-size: 1.8rem !important;
+            font-weight: $font-medium;
+            line-height: 3rem !important;
+            padding: 2rem 1rem;
+            border-top: none;
+            border-bottom-width: 1px;           
+        }
+
+        .heading {
+            @include themify($themes) {
+                color: themed('secondary');  
+            }
+            font-size: 1.6rem;
+            font-weight: $font-medium;
+            text-transform: capitalize;
+            
+            span {
+                @include themify($themes) {
+                    color: themed('color-gray');  
+                }
+                font-size: 1.4rem;
+                font-weight: $font-regular;
+                display: block;
+            }
+        }
+
+        .btn {
+            text-transform: capitalize;
+            transition: $transition;
+
+            &-gradient {
+                display: block;
+                width: 100%;
+            }
+
+            &:hover {
+                color: $color-white;
+                box-shadow: 0 3px 5px rgba($color-black, .2);
+            }
+
+            &-outline {
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+
+    &.table-list {
+        th, td {
+            padding: 1.5rem 2.5rem;
+        }
+        th {
+            border-bottom: none;
+        }
+        td {
+            @include themify($themes) {
+                background-color: themed('panel-bg');  
+            }
+        }
+
+        .progress {
+            width: 100px;
+            height: 7px;
+            border-radius: 50px;
+            display: inline-flex;
+            vertical-align: middle;
+            margin-left: 10px;
+        }
+        .d-chart {
+            width: 18rem;
+        }
+    }
+
+    &.table-list-separated {
+        @extend .table-list;
+
+        border-spacing: 0 1rem;
+        border-collapse: separate;
+
+        tbody {
+            tr {
+                &:hover {
+                    transform: translateY(-3px);
+                } 
+            }
+        }
+        tr {
+            position: relative;
+            z-index: 4;
+            transition: $transition;
+            transform: translateY(0);
+        }
+
+        td {
+            @include themify($themes) {
+                box-shadow: 10px 5px 5px themed('shadow');
+            }
+            border-top: none;
+
+            &:first-child {
+                border-bottom-left-radius: 5px;
+                border-top-left-radius: 5px;
+            }
+            &:last-child {
+                border-bottom-right-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+        }
+    }
+
+    [data-name="status"] {
+        font-size: 1.8rem;
+        i {
+            margin-left: 1.5rem;
+        }
+    }
+}
+
+/**
+* Table th sticky
+*/
+.th-sticky {
+    tr {
+        th {
+            @include themify($themes) {
+                background-color: themed('panel-bg') !important;
+            }
+            position: sticky;
+            top: 0;
+            z-index: 9;
+        }
+    }
+}
+
+/**
+* Breadcrumb
+*/
+.custom-breadcrumb {
+    @include flexbox(center);
+    @include themify($themes) {
+        background-color: themed('panel-bg');  
+        box-shadow: 0 5px 12px themed('shadow');
+    }
+    position: relative;
+    padding: 2.5rem 4rem;
+    margin-bottom: 3rem;
+
+    h3 {
+        @include themify($themes) {
+            color: themed('primary');  
+        }
+        // color: $color-primary;
+        font-size: 2.4rem;
+        font-weight: $font-medium;
+        line-height: 3rem;
+        margin-bottom: 0;
+    }
+
+    .breadcrumb-inner {
+        a, span {
+            @include themify($themes) {
+                color: themed('color-gray');  
+            }
+            // color: $color-gray;
+            display: inline-block;
+            font-size: 1.5rem;
+            position: relative;
+            line-height: .8;
+        }
+
+        a {
+            padding-right: .8rem;
+            margin-right: .5rem;
+            
+            &::after {
+                @include pseudo(auto, auto);
+                @include themify($themes) {
+                    background-color: themed('color-gray');  
+                }
+                // background-color: $color-gray;
+                width: .2rem;
+                height: .2rem;
+            }
+
+            &:hover{
+                color: $color-red;
+            }
+        }
+    }
+}
+
+
+/**
+* Select Box
+*/
+.select-box {
+    @include themify($themes) {
+        color: themed('color-gray');  
+        border: 1px solid themed('color-lightgray');
+    }
+    background-color: transparent;
+    border-radius: .4rem;
+    // color: $color-gray;
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    text-transform: capitalize;
+    position: relative;
+    padding: 1.4rem;
+    max-width: 14.5rem;
+    width: 100%;
+    // height: 100%;
+
+    .dropdown-toggler {
+        color: $color-lightgray-1;
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+
+        @include respond(medium) {
+            right: 1rem;
+        }
+    }
+
+    ul.dropdown-menu {
+        border-radius: 3px;
+        border: 0;
+        box-shadow: 0 1px 10px rgba($color-black, .2);
+        cursor: pointer;
+        // display: none;
+        transition: $transition;
+        padding: .5rem;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        &.active {
+            display: block;
+        }
+
+        li {
+            @include themify($themes) {
+                color: themed('color-gray');  
+            }
+            // color: $color-gray;
+            font-size: 1.3rem;
+            padding: 1rem;
+
+            &:hover {
+                background-color: $color-offwhite;
+                color: $color-red;
+            }
+        }
+    }
+}
