@@ -4,7 +4,7 @@
 
                     <div class="d-flex align-items-center">
                         <a href="listar.php" class="logo">
-                            <img src="assets/images/logo-ucv.svg" alt="UCV" />
+                            <img src="assets/images/logoGloria.png" alt="Gloria" />
                         </a>
                         <button class="menu-toggler arrow">
                             <i class="fas fa-chevron-right"></i>
@@ -67,11 +67,11 @@
                         <li class="nav-item">
                             <a href="#">
                                 <i class="fas fa-tachometer-alt"></i>
-                                <span>Áreas</span>
+                                <span>Usuarios</span>
                             </a>
                             <ul class="sub-menu">
-                                <li><a href="../area/listarareas.php">Listar</a></li>
-                                <li><a href="../area/agregar.php">Agregar</a></li>
+                                <li><a href="listar.php">Listar</a></li>
+                                <li><a href="agregar.php">Agregar datos</a></li>
                             </ul>
                         </li>
                     </ul>
