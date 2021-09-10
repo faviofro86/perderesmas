@@ -6,12 +6,12 @@ include_once('conexion.php');
 class Usuario{
     
     public function datos($doc){
-        global $pdo;
-                
+        $conex = new Conexion();
+        $pdo = $conex->initPDO();                
         $query = $pdo->prepare("SELECT * FROM registros WHERE dni = ?");
         $query->bindValue(1, $doc);
         $query->execute();
-        //$pdo->closePDO();
+        $conex->closePDO();
         return $query->fetch();
     }
     
@@ -108,11 +108,14 @@ class Usuario{
     }
     
     public function valoresd($a){
-        global $pdo;
+        $conex = new Conexion();
+        $pdo = $conex->initPDO();
         $query = $pdo->prepare("SELECT * FROM datos WHERE dni = ?");
         $query->bindValue(1, $a);
         $query->execute();
-        return $query->fetchAll();
+        $r = $query->fetchAll();
+        $conex->closePDO();
+        return $r;
     }
     
     public function fetch_todos($i){
