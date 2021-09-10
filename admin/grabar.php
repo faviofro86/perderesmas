@@ -24,7 +24,7 @@ try {
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $pdo->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
-    $sql = "INSERT INTO `datos` (`dni`,`grasa`,`imc`,`peso`,`cintura`,`brazo`,`estatura`,`complexion`,`fecha`) VALUES ('".$dni."','".$grasa."','".$imc."','".$peso."','".$cintura."','".$brazo."','".$estatura."','".$complexion."','".$fecha."')";
+    $sql = "INSERT INTO `datos` (`dni`,`grasa`,`imc`,`peso`,`cintura`,`brazo`,`estatura`,`complexion`,`fecha`) VALUES ('".$dni."','".$grasa."','".$imc."','".$peso."','".$cintura."','".$brazo."','".$estatura."','".$complex."','".$fecha."')";
     $pdo->exec($sql);
     
     $mensaje = "Valores registrados";
