@@ -2,6 +2,12 @@
 session_start();
 include_once('../includes/conexion.php');
 if (isset($_SESSION['logged_in'])) {
+    include_once('../includes/usuario.php');
+
+    $user = new Usuario;
+    $conex = new Conexion;
+    $id = $_GET['dni'];
+    $data = $user->datos($id);
 
 ?>
     <!doctype html>
@@ -21,7 +27,6 @@ if (isset($_SESSION['logged_in'])) {
                 <div class="card mixFilterable">
                     <div class="card-body table-responsive custom-datatable">
                         <div class="col-lg-9 col-md-8">
-                            <div class="card">
                                 <div class="card-body">
                                     <form class="settings-form" action="grabar.php" method="post">
                                         <div class="form-group">
@@ -56,11 +61,10 @@ if (isset($_SESSION['logged_in'])) {
                                             <label>Fecha:</label>
                                             <input type="date" name="fecha" value="2021-09-01" min="2021-08-01" max="2021-12-31">
                                         </div>
-                                        <input type="hidden" name="dni" value="<?php echo $_GET['dni'];?>">
+                                        <input type="hidden" name="dni" value="<?php echo $id;?>">
                                         <div class="separator-bordered" style="margin: 70px 0;"></div>
                                     </form>
                                 </div>
-                            </div>
                         </div>
                     </div>
                 </div>
