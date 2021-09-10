@@ -63,6 +63,7 @@ if (isset($_SESSION['logged_in'])) {
                                         </div>
                                         <input type="hidden" name="dni" value="<?php echo $id;?>">
                                         <div class="separator-bordered" style="margin: 70px 0;"></div>
+                                        <button type="submit" class="btn btn-primary">Registrar</button>
                                     </form>
                                 </div>
                         </div>
