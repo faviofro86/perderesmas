@@ -20,7 +20,7 @@ if (isset($_SESSION['logged_in'])) {
         <!-- <div class="container"> -->
 
         <div class="custom-breadcrumb">
-            <h3><?php echo $data['nombres'] . ' ' . $data['appaternos'] . ' ' . $data['apmaterno'];?></h3>
+            <h3><?php echo $data['nombres'] . ' ' . $data['appaterno'] . ' ' . $data['apmaterno'];?></h3>
         </div>
 
         <div class="row">
@@ -127,6 +127,9 @@ if (isset($_SESSION['logged_in'])) {
                                 <?php } ?>
                             </tbody>
                         </table>
+                        <div>
+                            <a class="btn btn-primary" href="registrar.php?<?php echo $data['dni']; ?>">Registrar</a>
+                        </div>
                     </div>
                 </div>
             </div>
