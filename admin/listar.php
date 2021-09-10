@@ -47,7 +47,7 @@ $lista = $user->fetch_todos($id);
                                                     <?php echo $uno['dni']; ?>
                                                     </div>
                                                     <div class="actions-row">
-                                                        <a class="edit" href="paciente.php?dni=<?php echo $uno['id']; ?>" id="">Editar</a>
+                                                        <a class="edit" href="paciente.php?dni=<?php echo $uno['dni']; ?>" id="">Editar</a>
                                                     </div>
                                                 </td>
                                                 <td style="text-transform: uppercase;"><?php echo $uno['nombres']; ?></td>
