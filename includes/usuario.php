@@ -121,7 +121,7 @@ class Usuario{
     public function fetch_todos($i){
         $conex = new Conexion();
         $pdo = $conex->initPDO();
-        $query = $pdo->prepare("SELECT dni, id, nombres, appaterno, apmaterno FROM registros WHERE nutricionista = ?");
+        $query = $pdo->prepare("SELECT dni, id, nombres, appaterno, apmaterno FROM registros");
         $query->bindValue(1, $i);
         $query->execute();
         $b=$query->fetchAll();
