@@ -18,7 +18,7 @@ if(isset($_SESSION['logged_in'])){
             $datos = $query->fetch();
             $num = $query->rowCount();
             if($num ==1){
-                $_SESSION['logged_in'] = true;
+                $_SESSION['logged_admin'] = true;
                 $_SESSION['username'] = $datos['nombres'];
                 $_SESSION['id'] = $datos['id'];
                 header('Location: listar.php');

@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once('../includes/conexion.php');
-if(isset($_SESSION['logged_in'])){
+if(isset($_SESSION['logged_admin'])){
 include_once('../includes/usuario.php');
 
 $user = new Usuario;

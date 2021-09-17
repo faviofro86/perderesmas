@@ -1,7 +1,7 @@
 <?php
 session_start();
 include_once('../includes/conexion.php');
-if (isset($_SESSION['logged_in'])) {
+if (isset($_SESSION['logged_admin'])) {
     include_once('../includes/usuario.php');
 
     $user = new Usuario;
@@ -63,6 +63,7 @@ if (isset($_SESSION['logged_in'])) {
                                         </div>
                                         <input type="hidden" name="dni" value="<?php echo $id;?>">
                                         <button type="submit" class="btn btn-primary btn-lg mt-4">Registrar</button>
+                                        <a type="button" class="btn btn-danger btn-lg mt-4" href="paciente.php?dni=<?php echo $id; ?>">Cancelar</a>
                                     </form>
                                 </div>
                         </div>
