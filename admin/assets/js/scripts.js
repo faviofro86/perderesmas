@@ -408,10 +408,10 @@
             dom: '<"buscar"lf>t<"flex align-items-center pagination"i<"pager"p>>',
             language: {
                 search: "",
-                searchPlaceholder: "Search Keyword",
-                lengthMenu: "<span class='d-none d-sm-inline-block'>Show poo</span><div class='form-control-select'> _MENU_ </div>",
+                searchPlaceholder: "Buscar",
+                lengthMenu: "<span class='d-none d-sm-inline-block'>Filas</span><div class='form-control-select'> _MENU_ </div>",
                 info: "Showing result _START_ to _END_",
-                infoEmpty: "No records found",
+                infoEmpty: "No se encontraron registros",
                 infoFiltered: "( Total _MAX_  )",
                 paginate: { first: "First", last: "Last", next: "<i class='fas fa-arrow-right'></i>", previous: "<i class='fas fa-arrow-left'></i>" },
             },
