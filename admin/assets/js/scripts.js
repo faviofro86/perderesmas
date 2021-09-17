@@ -405,7 +405,7 @@
             // "paging": false,
             // "info": false,
             // "searching": false
-            dom: 't<"flex align-items-center pagination"i<"pager"p>><"buscar"lf>',
+            dom: '<"buscar"lf>t<"flex align-items-center pagination"i<"pager"p>>',
             language: {
                 search: "",
                 searchPlaceholder: "Search Keyword",
